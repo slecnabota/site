@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <!-- wow animate__animated animate__fadeInDown -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    WEB<span>DIGITAL</span>
+                </div>
+                <nav class="header-nav">
+                    <a href="#service" class="header-link">Услуги</a>
+                    <a href="#site" class="header-link">Портфолио</a>
+                    <a href="#cost" class="header-link">Прайс-лист</a>
+                    <a href="#process" class="header-link">Процесс работы</a>
+                    <a href="#review" class="header-link">Отзывы</a>
+                    <a href="#contact" class="header-link">Контакты</a>
+                </nav>
+                <a href="#form">
+                    <button class="btn header-btn">Оставить заявку</button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-left">
+                        <div class="hero-title">
+                            Разработка<br>
+                            и продвижение<br>
+                            сайтов под ключ<span>.</span>
+                        </div>
+                        <div class="hero-text">
+                            Создаём современные и удобные сайты с уникальным дизайном от 2000,000 тг для любого бизнеса.
+                            Работаем по договору с ИП или ТОО. По выполнению выдаём акты выполненных работ и счет
+                            фактуру
+                        </div>
+                        <div class="hero-block">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.8444 15.0025L16.7337 14.6473C16.368 14.6044 15.9972 14.6449 15.6493 14.7658C15.3015 14.8867 14.9855 15.0849 14.7252 15.3454L12.4718 17.5989C8.99516 15.8307 6.1693 13.0048 4.40113 9.52812L6.6668 7.26243C7.19341 6.73582 7.4506 6.001 7.36487 5.25394L7.00971 2.16771C6.94028 1.57027 6.65356 1.01924 6.20415 0.61951C5.75475 0.219783 5.17404 -0.000713085 4.57258 1.73256e-06H2.45387C1.06998 1.73256e-06 -0.0812292 1.15121 0.00449886 2.53512C0.653583 12.994 9.0182 21.3464 19.4648 21.9955C20.8487 22.0812 21.9999 20.93 21.9999 19.5461V17.4274C22.0121 16.1905 21.0814 15.1495 19.8444 15.0025Z"
+                                    fill="#2C2E2D" />
+                            </svg>
+                            <form action="#" class="hero-form">
+                                <input type="tel" id="phone" class="phone-mask" placeholder="Введите номер телефона">
+                                <button class="btn hero-form__btn">
+                                    Оставить заявку
+                                    <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.7944 13.0607C26.3802 12.4749 26.3802 11.5251 25.7944 10.9393L16.2484 1.3934C15.6627 0.807613 14.7129 0.807613 14.1271 1.3934C13.5413 1.97919 13.5413 2.92893 14.1271 3.51472L22.6124 12L14.1271 20.4853C13.5413 21.0711 13.5413 22.0208 14.1271 22.6066C14.7129 23.1924 15.6627 23.1924 16.2484 22.6066L25.7944 13.0607ZM0.0273436 13.5L24.7337 13.5L24.7337 10.5L0.0273439 10.5L0.0273436 13.5Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="hero-like">
+                            <svg width="29" height="25" viewBox="0 0 29 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.9732 0C18.2998 0 15.9591 1.15652 14.5 3.11141C13.0409 1.15652 10.7002 0 8.02679 0C5.89869 0.00241299 3.85844 0.853926 2.35364 2.36773C0.848846 3.88153 0.00239863 5.93399 0 8.07482C0 17.1916 13.4371 24.5709 14.0093 24.8757C14.1602 24.9573 14.3287 25 14.5 25C14.6713 25 14.8398 24.9573 14.9907 24.8757C15.5629 24.5709 29 17.1916 29 8.07482C28.9976 5.93399 28.1512 3.88153 26.6464 2.36773C25.1416 0.853926 23.1013 0.00241299 20.9732 0ZM14.5 22.7658C12.136 21.38 2.07143 15.0674 2.07143 8.07482C2.07348 6.48654 2.70158 4.96391 3.81798 3.84083C4.93438 2.71775 6.44796 2.08589 8.02679 2.08382C10.5449 2.08382 12.659 3.4331 13.542 5.60028C13.62 5.79138 13.7527 5.95482 13.9233 6.06985C14.0939 6.18488 14.2946 6.2463 14.5 6.2463C14.7054 6.2463 14.9061 6.18488 15.0767 6.06985C15.2473 5.95482 15.38 5.79138 15.458 5.60028C16.341 3.42919 18.4551 2.08382 20.9732 2.08382C22.552 2.08589 24.0656 2.71775 25.182 3.84083C26.2984 4.96391 26.9265 6.48654 26.9286 8.07482C26.9286 15.0569 16.8614 21.3787 14.5 22.7658Z"
+                                    fill="#2C2E2D" />
+                            </svg>
+                            <p><span> 245 заказчиков</span> уже обратились к нам</p>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <div class="hero-column">
+                            <div class="hero-item">
+                                <img src="img/hero1.svg" alt="">
+                                <div class="hero-info">
+                                    <h5>Веб-дизайн</h5>
+                                    <p>
+                                        Проектирование<br> интерфейсов
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hero-item">
+                                <img src="img/hero2.svg" alt="">
+                                <div class="hero-info">
+                                    <h5>Презентации</h5>
+                                    <p>Понятная и<br> эстетичная подача</p>
+                                </div>
+                            </div>
+                            <div class="hero-item">
+                                <img src="img/hero3.svg" alt="">
+                                <div class="hero-info">
+                                    <h5>SEO</h5>
+                                    <p>Продвижение<br> сайта</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-column">
+                            <div class="hero-item">
+                                <img src="img/hero4.svg" alt="">
+                                <div class="hero-info">
+                                    <h5>Мобильные <br> приложения</h5>
+                                    <p>Приложения <br>
+                                        для Android и IOS</p>
+                                </div>
+                            </div>
+                            <div class="hero-item">
+                                <img src="img/hero5.svg" alt="">
+                                <div class="hero-info">
+                                    <h5>СММ</h5>
+                                    <p>Продвижение <br>
+                                        соц. сетей</p>
+                                </div>
+                            </div>
+                            <div class="hero-item">
+                                <img src="img/hero6.svg" alt="">
+                                <div class="hero-info">
+                                    <h5>Копирайтинг</h5>
+                                    <p>Качественные <br>
+                                        тексты</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partner" id="partner">
+            <div class="container">
+                <div class="partner-wrapper">
+                    <div class="partner-title">
+                        Помогаем компаниям мирового класса достигать
+                    </div>
+                    <div class="partner-title"><span class="partner-word">большего</span> с каждым днём<span
+                            class="partner-dot">.</span></div>
+                    <div class="partner-block">
+                        <div class="row">
+                            <img src="img/partner-1.svg" alt="partner-image">
+                            <img src="img/partner-2.svg" alt="partner-image">
+                            <img src="img/partner-3.svg" alt="partner-image">
+                            <img src="img/partner-4.svg" alt="partner-image">
+                            <img src="img/partner-5.svg" alt="partner-image">
+                            <img src="img/partner-6.svg" alt="partner-image">
+                        </div>
+                        <div class="row">
+                            <img src="img/partner-7.svg" alt="partner-image">
+                            <img src="img/partner-8.svg" alt="partner-image">
+                            <img src="img/partner-9.svg" alt="partner-image">
+                            <img src="img/partner-10.svg" alt="partner-image">
+                            <img src="img/partner-11.svg" alt="partner-image">
+                            <img src="img/partner-12.svg" alt="partner-image">
+                        </div>
+                        <div class="row center">
+                            <img src="img/partner-13.svg" alt="partner-image">
+                            <img src="img/partner-14.svg" alt="partner-image">
+                            <img src="img/partner-15.svg" alt="partner-image">
+                            <img src="img/partner-16.svg" alt="partner-image">
+                        </div>
+                    </div>
+                    <div class="partner-result">
+                        <div class="partner-column">
+                            <svg width="10" height="102" viewBox="0 0 10 102" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="60" width="10" height="10" fill="#2C2E2D" fill-opacity="0.3" />
+                                <rect y="88" width="10" height="14" fill="#2C2E2D" fill-opacity="0.3" />
+                                <rect y="32" width="10" height="10" fill="#2C2E2D" fill-opacity="0.3" />
+                                <rect width="10" height="14" fill="#2C2E2D" fill-opacity="0.3" />
+                            </svg>
+                            <div class="partner-number">
+                                <h4>70+</h4>
+                                <p>дизайн-<br>проектов</p>
+                            </div>
+                        </div>
+                        <div class="partner-column">
+                            <svg width="10" height="102" viewBox="0 0 10 102" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="60" width="10" height="10" fill="#2C2E2D" fill-opacity="0.3" />
+                                <rect y="88" width="10" height="14" fill="#2C2E2D" fill-opacity="0.3" />
+                                <rect y="32" width="10" height="10" fill="#2C2E2D" fill-opacity="0.3" />
+                                <rect width="10" height="14" fill="#2C2E2D" fill-opacity="0.3" />
+                            </svg>
+                            <div class="partner-number">
+                                <h4>60</h4>
+                                <p>выполненных<br>
+                                    проектов</p>
+                            </div>
+                        </div>
+                        <div class="partner-column">
+                            <svg width="10" height="102" viewBox="0 0 10 102" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="60" width="10" height="10" fill="#2C2E2D" fill-opacity="0.3" />
+                                <rect y="88" width="10" height="14" fill="#2C2E2D" fill-opacity="0.3" />
+                                <rect y="32" width="10" height="10" fill="#2C2E2D" fill-opacity="0.3" />
+                                <rect width="10" height="14" fill="#2C2E2D" fill-opacity="0.3" />
+                            </svg>
+                            <div class="partner-number">
+                                <h4>3+</h4>
+                                <p>года опыта в<br> создании сайтов</p>
+                            </div>
+                        </div>
+                        <div class="partner-column">
+                            <svg width="10" height="102" viewBox="0 0 10 102" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect y="60" width="10" height="10" fill="#2C2E2D" />
+                                <rect y="88" width="10" height="14" fill="#2C2E2D" />
+                                <rect y="32" width="10" height="10" fill="#2C2E2D" />
+                                <rect width="10" height="14" fill="#2C2E2D" />
+                            </svg>
+
+                            <div class="partner-number">
+                                <h4>6+</h4>
+                                <p>часов длится наш<br> рабочий день</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service" id="service">
+            <div class="container">
+                <div class="service-wrapper">
+                    <div class="service-title">
+                        Наши услуги<span>.</span>
+                    </div>
+                    <div class="service-text">
+                        Наш спектр услуг гармонично сочетается, поэтому мы можем обеспечить сквозное обслуживание, от
+                        Startup до Scaleup
+                    </div>
+                    <div class="service-grid">
+                        <div class="service-item"
+                            style="background: linear-gradient(125deg, rgba(168, 202, 242, 0.20) 3.1%, rgba(127, 181, 243, 0.20) 96.79%);">
+                            <div class="service-item__inner">
+                                <div class="service-img">
+                                    <img src="img/service-1.svg" alt="">
+                                </div>
+                                <div class="service-item__title">Веб-дизайн</div>
+                                <div class="service-info">
+                                    Делаем понятный и удобный UX/UI дизайн для сайтов, приложений
+                                    и разнообразных интерфейсов
+                                </div>
+                            </div>
+                            <a href="#">
+                                <button class="service-btn btn">
+                                    Подробнее
+                                    <img src="img/arrow-white.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                        <div class="service-item"
+                            style="background: linear-gradient(157deg, rgba(248, 214, 184, 0.20) 13.63%, rgba(252, 182, 118, 0.20) 92.72%);">
+                            <div class="service-item__inner">
+                                <div class="service-img">
+                                    <img src="img/service-2.svg" alt="">
+                                </div>
+                                <div class="service-item__title">СММ</div>
+                                <div class="service-info">
+                                    Продвигаем ваши соц сети в Интсаграм с помощью Таргета и комплексного ведения страницы
+                                </div>
+                            </div>
+                            <a href="#">
+                                <button class="service-btn btn">
+                                    Подробнее
+                                    <img src="img/arrow-white.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                        <div class="service-item"
+                            style="background: linear-gradient(233deg, rgba(233, 182, 251, 0.20) -2.3%, rgba(214, 120, 246, 0.20) 100%);">
+                            <div class="service-item__inner">
+                                <div class="service-img">
+                                    <img src="img/service-3.svg" alt="">
+                                </div>
+                                <div class="service-item__title">Продвижение сайтов</div>
+                                <div class="service-info">
+                                    Запускаем эффективную контекстную Google-рекламу бизнеса. Не сливаем ваш бюджет
+                                </div>
+                            </div>
+                            <a href="#">
+                                <button class="service-btn btn">
+                                    Подробнее
+                                    <img src="img/arrow-white.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                        <!-- 2 -->
+                        <div class="service-item"
+                            style="background: linear-gradient(234deg, rgba(242, 213, 171, 0.20) 1.69%, rgba(242, 213, 171, 0.20) 1.7%, rgba(244, 194, 119, 0.20) 98.73%);">
+                            <div class="service-item__inner">
+                                <div class="service-img">
+                                    <img src="img/service-4.svg" alt="">
+                                </div>
+                                <div class="service-item__title">Копирайтинг</div>
+                                <div class="service-info">
+                                    Пишем профессиональные тексты: для сайтов, для презентаций, для SMM
+                                </div>
+                            </div>
+                            <a href="#">
+                                <button class="service-btn btn">
+                                    Подробнее
+                                    <img src="img/arrow-white.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                        <div class="service-item"
+                            style="background: linear-gradient(125deg, rgba(154, 168, 242, 0.20) 0%, rgba(100, 115, 241, 0.20) 100%);">
+                            <div class="service-item__inner">
+                                <div class="service-img">
+                                    <img src="img/service-5.svg" alt="">
+                                </div>
+                                <div class="service-item__title">Презентации</div>
+                                <div class="service-info">
+                                    Оформляем профессиональные презентации для компаний
+                                    в самых разных сферах
+                                </div>
+                            </div>
+                            <a href="#">
+                                <button class="service-btn btn">
+                                    Подробнее
+                                    <img src="img/arrow-white.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                        <div class="service-item"
+                            style="background: linear-gradient(180deg, rgba(243, 128, 162, 0.20) 0%, rgba(252, 173, 197, 0.20) 100%);">
+                            <div class="service-item__inner">
+                                <div class="service-img">
+                                    <img src="img/service-6.svg" alt="">
+                                </div>
+                                <div class="service-item__title">Мобильные приложения</div>
+                                <div class="service-info">
+                                    Разрабатываем кроссбраузерные мобильные приложения для Android и IOS любой сложности
+                                </div>
+                            </div>
+                            <a href="#">
+                                <button class="service-btn btn">
+                                    Подробнее
+                                    <img src="img/arrow-white.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="site" id="site">
+            <div class="container">
+                <div class="site-wrapper">
+                    <div class="site-title">
+                        Наши последние работы<span>.</span>
+                    </div>
+                    <div class="site-text">
+                        Мы любим то, что делаем, и с радостью готовы поделиться с вами результатами
+                    </div>
+                    <div class="site-grid">
+                        <div class="site-item" style="background-image: url(img/site-1.png);">
+                            <div class="site-back"></div>
+                            <div class="site-block">
+                                <p>Персональный сайт<br>
+                                    для писателя и политика</p>
+                                <a href="https://kadyrzhanov.kz/">
+                                    перейти
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4125 0.974286C13.3986 0.422175 12.9398 -0.014162 12.3877 -0.000300496L3.39052 0.22559C2.83841 0.239452 2.40207 0.698263 2.41593 1.25037C2.42979 1.80248 2.8886 2.23882 3.44071 2.22496L11.4382 2.02417L11.639 10.0216C11.6528 10.5738 12.1117 11.0101 12.6638 10.9962C13.2159 10.9824 13.6522 10.5236 13.6384 9.97145L13.4125 0.974286ZM1.72463 13.6891L13.1374 1.68852L11.6881 0.310249L0.275368 12.3109L1.72463 13.6891Z"
+                                            fill="#ECF7F5" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="site-item" style="background-image: url(img/site-2.png);">
+                            <div class="site-back"></div>
+                            <div class="site-block">
+                                <p>Сайт для<br> образовательного центра</p>
+                                <a href="https://silkway-edu.com/">
+                                    перейти
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4125 0.974286C13.3986 0.422175 12.9398 -0.014162 12.3877 -0.000300496L3.39052 0.22559C2.83841 0.239452 2.40207 0.698263 2.41593 1.25037C2.42979 1.80248 2.8886 2.23882 3.44071 2.22496L11.4382 2.02417L11.639 10.0216C11.6528 10.5738 12.1117 11.0101 12.6638 10.9962C13.2159 10.9824 13.6522 10.5236 13.6384 9.97145L13.4125 0.974286ZM1.72463 13.6891L13.1374 1.68852L11.6881 0.310249L0.275368 12.3109L1.72463 13.6891Z"
+                                            fill="#ECF7F5" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="site-item" style="background-image: url(img/site-3.png);">
+                            <div class="site-back"></div>
+                            <div class="site-block">
+                                <p>Корпоративный сайт<br>
+                                    для Pro Systems</p>
+                                <a href="https://prosystems.kz/">
+                                    перейти
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4125 0.974286C13.3986 0.422175 12.9398 -0.014162 12.3877 -0.000300496L3.39052 0.22559C2.83841 0.239452 2.40207 0.698263 2.41593 1.25037C2.42979 1.80248 2.8886 2.23882 3.44071 2.22496L11.4382 2.02417L11.639 10.0216C11.6528 10.5738 12.1117 11.0101 12.6638 10.9962C13.2159 10.9824 13.6522 10.5236 13.6384 9.97145L13.4125 0.974286ZM1.72463 13.6891L13.1374 1.68852L11.6881 0.310249L0.275368 12.3109L1.72463 13.6891Z"
+                                            fill="#ECF7F5" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="site-item" style="background-image: url(img/site-4.png);">
+                            <div class="site-back"></div>
+                            <div class="site-block">
+                                <p>Корпоративный сайт <br>
+                                    для дизайнера интерьера <br>
+                                    в Астане</p>
+                                <a href="https://auyelbekova-design.com/">
+                                    перейти
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4125 0.974286C13.3986 0.422175 12.9398 -0.014162 12.3877 -0.000300496L3.39052 0.22559C2.83841 0.239452 2.40207 0.698263 2.41593 1.25037C2.42979 1.80248 2.8886 2.23882 3.44071 2.22496L11.4382 2.02417L11.639 10.0216C11.6528 10.5738 12.1117 11.0101 12.6638 10.9962C13.2159 10.9824 13.6522 10.5236 13.6384 9.97145L13.4125 0.974286ZM1.72463 13.6891L13.1374 1.68852L11.6881 0.310249L0.275368 12.3109L1.72463 13.6891Z"
+                                            fill="#ECF7F5" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="site-item" style="background-image: url(img/site-5.png);">
+                            <div class="site-back"></div>
+                            <div class="site-block">
+                                <p>Корпоративный сайт <br>
+                                    для инвестиционной <br> компании Ordabasy</p>
+                                <a href="https://www.ordabasy.kz/">
+                                    перейти
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4125 0.974286C13.3986 0.422175 12.9398 -0.014162 12.3877 -0.000300496L3.39052 0.22559C2.83841 0.239452 2.40207 0.698263 2.41593 1.25037C2.42979 1.80248 2.8886 2.23882 3.44071 2.22496L11.4382 2.02417L11.639 10.0216C11.6528 10.5738 12.1117 11.0101 12.6638 10.9962C13.2159 10.9824 13.6522 10.5236 13.6384 9.97145L13.4125 0.974286ZM1.72463 13.6891L13.1374 1.68852L11.6881 0.310249L0.275368 12.3109L1.72463 13.6891Z"
+                                            fill="#ECF7F5" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="site-item" style="background-image: url(img/site-6.png);">
+                            <div class="site-back"></div>
+                            <div class="site-block">
+                                <p>Сайт каталог <br>
+                                    для майнинговой компании <br>
+                                    в Алматы</p>
+                                <a href="https://marscripto.kz/">
+                                    перейти
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.4125 0.974286C13.3986 0.422175 12.9398 -0.014162 12.3877 -0.000300496L3.39052 0.22559C2.83841 0.239452 2.40207 0.698263 2.41593 1.25037C2.42979 1.80248 2.8886 2.23882 3.44071 2.22496L11.4382 2.02417L11.639 10.0216C11.6528 10.5738 12.1117 11.0101 12.6638 10.9962C13.2159 10.9824 13.6522 10.5236 13.6384 9.97145L13.4125 0.974286ZM1.72463 13.6891L13.1374 1.68852L11.6881 0.310249L0.275368 12.3109L1.72463 13.6891Z"
+                                            fill="#ECF7F5" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="process" id="process">
+            <div class="process-m">
+                <div class="container">
+                    <div class="process-wrapper">
+                        <div class="process-title">
+                            <span>Процесс</span> работы с нами.
+                        </div>
+                        <div class="process-grid">
+                            <div class="process-item">
+                                <img src="img/process-1.svg" alt="">
+                                <div class="process-block">
+                                    <h5>Брифование</h5>
+                                    <p>
+                                        10-минутный разговор для выяснения всех деталей и<br> задач. Составление
+                                        портрета
+                                        целевой аудитории,<br> выявление её “болей”, определение ключевых<br>
+                                        смыслов и фактов о компании
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="process-item">
+                                <img src="img/process-2.svg" alt="">
+                                <div class="process-block">
+                                    <h5>Создание маркетинговой стратегии</h5>
+                                    <p>
+                                        Анализируем рынок и конкурентов, и на основе этого<br> разрабатываем стратегию,
+                                        которая будет достигать<br> ваших целей
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="process-item">
+                                <img src="img/process-3.svg" alt="">
+                                <div class="process-block">
+                                    <h5>Разработка</h5>
+                                    <p>
+                                        Создаём рекламные материалы, веб-сайты,<br> социальные медиа кампании и
+                                        другие<br>
+                                        инструменты маркетинга
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="process-item">
+                                <img src="img/process-4.svg" alt="">
+                                <div class="process-block">
+                                    <h5>Реализация и оптимизация</h5>
+                                    <p>
+                                        Запускаем маркетинговые кампании и непрерывно<br> оптимизирует их, основываясь
+                                        на
+                                        анализе данных и<br> отзывах от заказчика
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="process-item">
+                                <img src="img/process-5.svg" alt="">
+                                <div class="process-block">
+                                    <h5>Отчётность</h5>
+                                    <p>
+                                        Предоставляем регулярные отчеты о проделанной<br> работе и анализирует
+                                        результаты
+                                        маркетинговыхz<br> кампаний
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="process-item">
+                                <img src="img/process-6.svg" alt="">
+                                <div class="process-block">
+                                    <h5>Постоянное сотрудничество</h5>
+                                    <p>
+                                        Поддерживаем постоянное взаимодействие<br>
+                                        с клиентом, обсуждаем результаты и планируем будущие<br> шаги для достижения
+                                        маркетинговых целей
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team" id="team">
+            <div class="container">
+                <div class="team-wrapper">
+                    <div class="team-title">
+                        Познакомьтесь с нашей <br>
+                        командой профессионалов <span>.</span>
+                    </div>
+                    <div class="team-text">
+                        Наша команда состоит из экспертов в области маркетинговых стратегий, рекламы, контента, дизайна
+                        и аналитики. Мы стремимся к достижению наилучших результатов для наших клиентов и предлагаем
+                        индивидуальный подход
+                    </div>
+                    <div class="team-slider">
+                        <div class="swiper" id="teamSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="team-item">
+                                        <div class="team-img">
+                                            <img src="img/team1.svg" alt="">
+                                        </div>
+                                        <div class="team-info">
+                                            <h5>Галцэн</h5>
+                                            <p>СЕО / Маркетолог</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="team-item">
+                                        <div class="team-img">
+                                            <img src="img/team2.png" alt="">
+                                        </div>
+                                        <div class="team-info">
+                                            <h5>Дарья</h5>
+                                            <p>UX&UI Senior Веб-дизайнер</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="team-item">
+                                        <div class="team-img">
+                                            <img src="img/team3.svg" alt="">
+                                        </div>
+                                        <div class="team-info">
+                                            <h5>Шокан</h5>
+                                            <p>Full-stack разработчик</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="team-item">
+                                        <div class="team-img">
+                                            <img src="img/team4.png" alt="">
+                                        </div>
+                                        <div class="team-info">
+                                            <h5>Полина</h5>
+                                            <p>UX&UI Senior Веб-дизайнер</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="team-item">
+                                        <div class="team-img">
+                                            <img src="img/team4.png" alt="">
+                                        </div>
+                                        <div class="team-info">
+                                            <h5>Полина</h5>
+                                            <p>UX&UI Senior Веб-дизайнер</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination" id="teamPagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form" id="form">
+            <div class="form-m">
+                <div class="container">
+                    <div class="form-wrapper">
+                        <div class="form-block">
+                            <div class="form-block__title">
+                                Наши идеи
+                                <br>
+                                <div class="form-block__icon">
+                                    <img src="img/switch.svg" alt="">
+                                    включают
+                                </div>
+                                ваш бизнес
+                            </div>
+                            <div class="form-block__text">
+                                Развивайте ваш бизнес в правильном<br> направлении вместе с <span>WEB</span>DIGITAL
+                            </div>
+                        </div>
+                        <div class="form-block">
+                            <div class="form-info">
+                                <span>Оставьте заявку</span> прямо сейчас и наш<br> менеджер свяжется с вами в течение часа
+                            </div>
+                            <form action="#" class="form-f">
+                                <div class="form-input">
+                                    <svg width="22" height="26" viewBox="0 0 22 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.533 15.744C14.374 15.692 13.369 15.239 13.997 13.33H13.988C15.625 11.644 16.876 8.931 16.876 6.26C16.876 2.153 14.145 0 10.971 0C7.795 0 5.079 2.152 5.079 6.26C5.079 8.942 6.323 11.666 7.97 13.348C8.612 15.032 7.464 15.657 7.224 15.745C3.9 16.947 0 19.138 0 21.301V22.112C0 25.059 5.714 25.729 11.002 25.729C16.298 25.729 21.94 25.059 21.94 22.112V21.301C21.94 19.073 18.021 16.899 14.533 15.744Z"
+                                            fill="#2C2E2D" />
+                                    </svg>
+    
+                                    <input type="text" placeholder="Ваше имя">
+                                </div>
+                                <div class="form-input">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.8444 15.0025L16.7337 14.6473C16.368 14.6044 15.9972 14.6449 15.6493 14.7658C15.3015 14.8867 14.9855 15.0849 14.7252 15.3454L12.4718 17.5989C8.99516 15.8307 6.1693 13.0048 4.40113 9.52812L6.6668 7.26243C7.19341 6.73582 7.4506 6.001 7.36487 5.25394L7.00971 2.16771C6.94028 1.57027 6.65356 1.01924 6.20415 0.61951C5.75475 0.219784 5.17404 -0.000713085 4.57258 1.73256e-06H2.45387C1.06998 1.73256e-06 -0.0812292 1.15121 0.00449886 2.53512C0.653583 12.994 9.0182 21.3464 19.4648 21.9955C20.8487 22.0812 21.9999 20.93 21.9999 19.5461V17.4274C22.0121 16.1905 21.0814 15.1495 19.8444 15.0025Z"
+                                            fill="#2C2E2D" />
+                                    </svg>
+    
+                                    <input type="tel" id="form-phone" class="phone-mask" placeholder="Ваш номер">
+                                </div>
+                                <button class="form-btn btn">
+                                    Оставить заявку
+                                    <img src="img/arrow-white.svg" alt="">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cost" id="cost">
+            <div class="container">
+                <div class="cost-wrapper">
+                    <div class="cost-title">
+                        Стоимость услуг
+                        <span>.</span>
+                    </div>
+                    <div class="cost-grid">
+                        <div class="cost-item">
+                            <div class="cost-item__inner">
+                                <div class="cost-item__title">
+                                    Лендинг.
+                                </div>
+                                <div class="cost-item__deadline">7 - 14 дней</div>
+                                <div class="cost-item__price">
+                                    <span>от</span>
+                                    350
+                                    <svg width="26" height="46" viewBox="0 0 26 46" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 30.6667H5.2C5.2 33.4267 8.762 35.7778 13 35.7778C17.238 35.7778 20.8 33.4267 20.8 30.6667C20.8 27.8556 18.096 26.8333 12.376 25.4789C6.864 24.1244 0 22.4378 0 15.3333C0 10.7589 3.822 6.87444 9.1 5.57111V0H16.9V5.57111C22.178 6.87444 26 10.7589 26 15.3333H20.8C20.8 12.5733 17.238 10.2222 13 10.2222C8.762 10.2222 5.2 12.5733 5.2 15.3333C5.2 18.1444 7.904 19.1667 13.624 20.5211C19.136 21.8756 26 23.5622 26 30.6667C26 35.2411 22.178 39.1256 16.9 40.4289V46H9.1V40.4289C3.822 39.1256 0 35.2411 0 30.6667Z"
+                                            fill="#5F4FD6" />
+                                    </svg>
+                                </div>
+                                <ul>
+                                    <li>Индивидуальный дизайн</li>
+                                    <li>До 7-ми уникальных блоков</li>
+                                    <li>Адаптив под все разрешения</li>
+                                    <li>Форма заявки</li>
+                                    <li>Тех. поддержка 6 месяцев</li>
+                                </ul>
+                            </div>
+                            <a href="#form">
+                                <button class="btn cost-item__btn">
+                                    Оставить заявку
+                                    <img src="img/arrow-white.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                        <div class="cost-item cost-business">
+                            <div class="cost-item__inner">
+                                <div class="cost-item__title">
+                                    Бизнес.
+                                </div>
+                                <div class="cost-item__deadline">20-30 дней</div>
+                                <div class="cost-item__price">
+                                    <span>от</span>
+                                    750
+                                    <svg width="26" height="46" viewBox="0 0 26 46" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 30.6667H5.2C5.2 33.4267 8.762 35.7778 13 35.7778C17.238 35.7778 20.8 33.4267 20.8 30.6667C20.8 27.8556 18.096 26.8333 12.376 25.4789C6.864 24.1244 0 22.4378 0 15.3333C0 10.7589 3.822 6.87444 9.1 5.57111V0H16.9V5.57111C22.178 6.87444 26 10.7589 26 15.3333H20.8C20.8 12.5733 17.238 10.2222 13 10.2222C8.762 10.2222 5.2 12.5733 5.2 15.3333C5.2 18.1444 7.904 19.1667 13.624 20.5211C19.136 21.8756 26 23.5622 26 30.6667C26 35.2411 22.178 39.1256 16.9 40.4289V46H9.1V40.4289C3.822 39.1256 0 35.2411 0 30.6667Z"
+                                            fill="#5F4FD6" />
+                                    </svg>
+                                </div>
+                                <ul>
+                                    <li>Индивидуальный дизайн</li>
+                                    <li>Кликабельный прототип</li>
+                                    <li>До 5-ти уникальных страниц</li>
+                                    <li>Адаптив под все разрешения</li>
+                                    <li>Корпоративная почта</li>
+                                    <li>Тех. поддержка 6 месяцев</li>
+                                </ul>
+                            </div>
+
+                            <a href="#form">
+                                <button class="btn cost-item__btn">
+                                    Оставить заявку
+                                    <img src="img/arrow-white.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                        <div class="cost-item">
+                            <div class="cost-item__inner">
+                                <div class="cost-item__title">
+                                    E-commerce.
+                                </div>
+                                <div class="cost-item__deadline">30 дней</div>
+                                <div class="cost-item__price">
+                                    <span>от</span>
+                                    1000
+                                    <svg width="26" height="46" viewBox="0 0 26 46" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0 30.6667H5.2C5.2 33.4267 8.762 35.7778 13 35.7778C17.238 35.7778 20.8 33.4267 20.8 30.6667C20.8 27.8556 18.096 26.8333 12.376 25.4789C6.864 24.1244 0 22.4378 0 15.3333C0 10.7589 3.822 6.87444 9.1 5.57111V0H16.9V5.57111C22.178 6.87444 26 10.7589 26 15.3333H20.8C20.8 12.5733 17.238 10.2222 13 10.2222C8.762 10.2222 5.2 12.5733 5.2 15.3333C5.2 18.1444 7.904 19.1667 13.624 20.5211C19.136 21.8756 26 23.5622 26 30.6667C26 35.2411 22.178 39.1256 16.9 40.4289V46H9.1V40.4289C3.822 39.1256 0 35.2411 0 30.6667Z"
+                                            fill="#5F4FD6" />
+                                    </svg>
+                                </div>
+                                <ul>
+                                    <li>Индивидуальный дизайн</li>
+                                    <li>До 7-ми уникальных блоков</li>
+                                    <li>Каталог до 1000 товаров</li>
+                                    <li>Корзина и онлайн-покупка</li>
+                                    <li>Адаптив под все разрешения</li>
+                                    <li>Адаптив под все разрешения</li>
+                                    <li>Сет уникальных иконок</li>
+                                    <li>Тех. поддержка 1 год</li>
+                                </ul>
+                            </div>
+                            <a href="#form">
+                                <button class="btn cost-item__btn">
+                                    Оставить заявку
+                                    <img src="img/arrow-white.svg" alt="">
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review" id="review">
+            <div class="container">
+                <div class="review-wrapper">
+                    <div class="review-title">
+                        Что говорят клиенты о нас
+                        <span>.</span>
+                    </div>
+                    <div class="review-slider">
+                        <div class="swiper" id="reviewSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="review-item">
+                                        <div class="review-item__inner">
+                                            <div class="review-top">
+                                                <p>5.0</p>
+                                                <div class="review-rate">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-text">
+                                                “Очень классная компания, за короткий срок и за приемлемые средства,
+                                                создала профессиональный информационный сайт, тех. поддержка на связи
+                                                постоянно, все вопросы решаются оперативно. Спасибо всей команде”
+                                            </div>
+                                        </div>
+                                        <div class="review-user">
+                                            <div class="review-icon">A</div>
+                                            <div class="review-user__info">
+                                                <h5>Асхат</h5>
+                                                <p>Директор, kurskz.kz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-item"
+                                        style="background: linear-gradient(125deg, rgba(168, 202, 242, 0.20) 3.1%, rgba(127, 181, 243, 0.20) 96.79%);">
+                                        <div class="review-item__inner">
+                                            <div class="review-top">
+                                                <p>5.0</p>
+                                                <div class="review-rate">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-text">
+                                                “Благодарю всю команду Web Digital
+                                                за работу над моим сайтом! Очень крутые ребята - исполнительные,
+                                                понятливые, ответственные и что удобно всегда на связи! Сайт получился
+                                                именно таким, как я хотела, учитывая, что его сделали полноценным
+                                                образовательным порталом, то есть ребятами сами верстали, и это не
+                                                Тильда и нет GetCourse, и не просто лэндинг&#41; Но помимо всего
+                                                остального даже чисто по-человечески было приятно с ними работать!
+                                                Обязательно буду ещё обращаться!”
+                                            </div>
+                                        </div>
+                                        <div class="review-user">
+                                            <div class="review-icon">М</div>
+                                            <div class="review-user__info">
+                                                <h5>Меруерт</h5>
+                                                <p>Директор, Dualingo.kz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-item">
+                                        <div class="review-item__inner">
+                                            <div class="review-top">
+                                                <p>5.0</p>
+                                                <div class="review-rate">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-text">
+                                                “Очень классная компания, за короткий срок и за приемлемые средства,
+                                                создала профессиональный информационный сайт, тех. поддержка на связи
+                                                постоянно, все вопросы решаются оперативно. Спасибо всей команде”
+                                            </div>
+                                        </div>
+                                        <div class="review-user">
+                                            <div class="review-icon">A</div>
+                                            <div class="review-user__info">
+                                                <h5>Асхат</h5>
+                                                <p>Директор, kurskz.kz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-item">
+                                        <div class="review-item__inner">
+                                            <div class="review-top">
+                                                <p>5.0</p>
+                                                <div class="review-rate">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-text">
+                                                “Очень классная компания, за короткий срок и за приемлемые средства,
+                                                создала профессиональный информационный сайт, тех. поддержка на связи
+                                                постоянно, все вопросы решаются оперативно. Спасибо всей команде”
+                                            </div>
+                                        </div>
+                                        <div class="review-user">
+                                            <img src="img/a.svg" alt="">
+                                            <div class="review-user__info">
+                                                <h5>Асхат</h5>
+                                                <p>Директор, kurskz.kz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination" id="reviewPagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-block">
+                    <div class="footer-logo">
+                        <span>WEB</span>DIGITAL
+                    </div>
+                    <div class="footer-text">
+                        Диджитал агенство по разработке <br>
+                        и продвижению сайтов в СНГ, Европе и Казахстане
+                    </div>
+                    <div class="footer-copy">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.916 4.998C7.812 5.04 8.043 5.803 8.057 6.16H9.31C9.254 4.774 8.267 3.927 6.895 3.927C5.348 3.927 4.2 4.9 4.2 7.098C4.2 8.456 4.851 10.066 6.888 10.066C8.442 10.066 9.275 8.911 9.296 8.001H8.043C8.022 8.414 7.728 8.967 6.902 9.009C5.985 8.981 5.6 8.267 5.6 7.098C5.6 5.075 6.496 5.012 6.916 4.998ZM7 0C3.136 0 0 3.136 0 7C0 10.864 3.136 14 7 14C10.864 14 14 10.864 14 7C14 3.136 10.864 0 7 0ZM7 12.6C3.913 12.6 1.4 10.087 1.4 7C1.4 3.913 3.913 1.4 7 1.4C10.087 1.4 12.6 3.913 12.6 7C12.6 10.087 10.087 12.6 7 12.6Z"
+                                fill="#ECF7F5" />
+                        </svg>
+                        Все права защищены Web Digital 2023
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <a href="#service">
+                        Наши услуги
+                    </a>
+                    <a href="#process">
+                        Процесс раборты
+                    </a>
+                    <a href="#price">
+                        Прайс лист
+                    </a>
+                    <a href="#site">
+                        Портфолио
+                    </a>
+                    <a href="#review">
+                        Отзывы
+                    </a>
+                </div>
+                <div class="footer-media">
+                    <a href="tel:+77073334386" class="footer-item">
+                        <img src="img/tel.svg" alt="">
+                        +7 (707) 333-43-86
+                    </a>
+                    <a href="mailto:webdigitalkz@gmail.com" class="footer-item">
+                        <img src="img/email.svg" alt="">
+                        webdigitalkz@gmail.com
+                    </a>
+                    <div class="footer-item">
+                        <img src="img/address.svg" alt="">
+                        Казахстан, г. Алматы, Самал 2, 58
+                    </div>
+                    <div class="footer-inner">
+                        <a href="">
+                            <img src="img/teg.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/whatsapp.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/imask"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.min.js"></script>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/links.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/wow-init.js"></script>
+</body>
+
+</html>
