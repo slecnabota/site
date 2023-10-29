@@ -10,13 +10,13 @@ const team = new Swiper('#teamSwiper', {
         slidesPerView: 1,
         spaceBetween: 50,
       },
-      768: {
+      550: {
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 45,
       },
       992:{
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 45,
       },
       1300: {
         slidesPerView: 4,
@@ -37,7 +37,7 @@ const review = new Swiper('#reviewSwiper', {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    768: {
+    650: {
       slidesPerView: 2,
       spaceBetween: 20,
     },

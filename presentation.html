@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/presentation.min.css">
+</head>
+
+<body>
+    <!-- wow animate__animated animate__fadeInDown -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-wrapper">
+                <a href="index.html">
+                    <div class="header-logo">
+                        WEB<span>DIGITAL</span>
+                    </div>
+                </a>
+                <nav class="header-nav">
+                    <div class="header-nav__inner">
+                        <a href="#service" class="header-link header-service">
+                            Услуги
+                            <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 7L7 8L9 8L9 7L7 7Z"
+                                    fill="#2C2E2D" />
+                            </svg>
+                        </a>
+
+                        <div class="header-pop">
+                            <div class="header-pop__inner">
+                                <a href="" class="header-pop__item">
+                                    <img src="img/service-1.svg" alt="">
+                                    <p>Веб-дизайн</p>
+                                </a>
+                                <a href="presentation.html" class="header-pop__item">
+                                    <img src="img/service-2.svg" alt="">
+                                    <p>Презентации</p>
+                                </a>
+                                <a href="promotion.html" class="header-pop__item">
+                                    <img src="img/service-3.svg" alt="">
+                                    <p>SEO</p>
+                                </a>
+                                <a href="" class="header-pop__item">
+                                    <img src="img/service-4.svg" alt="">
+                                    <p>Мобильные приложения</p>
+                                </a>
+                                <a href="" class="header-pop__item">
+                                    <img src="img/service-5.svg" alt="">
+                                    <p>СММ</p>
+                                </a>
+                                <a href="" class="header-pop__item">
+                                    <img src="img/service-6.svg" alt="">
+                                    <p>Копирайтинг</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#site" class="header-link">Портфолио</a>
+                    <a href="#cost" class="header-link">Прайс-лист</a>
+                    <a href="#process" class="header-link">Процесс работы</a>
+                    <a href="#review" class="header-link">Отзывы</a>
+                    <a href="#contact" class="header-link">Контакты</a>
+                </nav>
+                <a href="#form">
+                    <button class="btn header-btn">Оставить заявку</button>
+                </a>
+                <button class="burger">
+                    <span></span>
+                </button>
+                <div class="header__mobile">
+                    <div class="burger-container">
+                        <div class="burger-top"></div>
+                        <div class="links">
+                            <div class="header-link header-open" onclick="openPop()">
+                                Услуги
+                                <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.29289 8.70711C7.68342 9.09763 8.31658 9.09763 8.70711 8.70711L15.0711 2.34315C15.4616 1.95262 15.4616 1.31946 15.0711 0.928932C14.6805 0.538408 14.0474 0.538408 13.6569 0.928932L8 6.58579L2.34315 0.928932C1.95262 0.538408 1.31946 0.538408 0.928932 0.928932C0.538408 1.31946 0.538408 1.95262 0.928932 2.34315L7.29289 8.70711ZM7 7L7 8L9 8L9 7L7 7Z"
+                                        fill="#2C2E2D" />
+                                </svg>
+                            </div>
+                            <div class="header-pop" id="op">
+                                <div class="header-pop__inner">
+                                    <a href="" class="header-pop__item">
+                                        <img src="img/service-1.svg" alt="">
+                                        <p>Веб-дизайн</p>
+                                    </a>
+                                    <a href="presentation.html" class="header-pop__item">
+                                        <img src="img/service-2.svg" alt="">
+                                        <p>Презентации</p>
+                                    </a>
+                                    <a href="promotion.html" class="header-pop__item">
+                                        <img src="img/service-3.svg" alt="">
+                                        <p>SEO</p>
+                                    </a>
+                                    <a href="" class="header-pop__item">
+                                        <img src="img/service-4.svg" alt="">
+                                        <p>Мобильные приложения</p>
+                                    </a>
+                                    <a href="" class="header-pop__item">
+                                        <img src="img/service-5.svg" alt="">
+                                        <p>СММ</p>
+                                    </a>
+                                    <a href="" class="header-pop__item">
+                                        <img src="img/service-6.svg" alt="">
+                                        <p>Копирайтинг</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#portfolio" class="header-link">Портфолио</a>
+                            <a href="#pprice" class="header-link">Прайс-лист</a>
+                            <a href="#process" class="header-link">Процесс работы</a>
+                            <a href="#review" class="header-link">Отзывы</a>
+                            <a href="#contact" class="header-link">Контакты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="presentation main">
+        <section class="hero" id="hero">
+            <div class="icon1"></div>
+            <div class="icon2"></div>
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-left">
+                        <div class="hero-title">
+                            Презентации &<br> Инфографика<span>.</span>
+                        </div>
+                        <div class="hero-text">
+                            Корпоративные и персональные решения<br> в области визуальной коммуникации
+                        </div>
+                        <div class="hero-block">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.8444 15.0025L16.7337 14.6473C16.368 14.6044 15.9972 14.6449 15.6493 14.7658C15.3015 14.8867 14.9855 15.0849 14.7252 15.3454L12.4718 17.5989C8.99516 15.8307 6.1693 13.0048 4.40113 9.52812L6.6668 7.26243C7.19341 6.73582 7.4506 6.001 7.36487 5.25394L7.00971 2.16771C6.94028 1.57027 6.65356 1.01924 6.20415 0.61951C5.75475 0.219783 5.17404 -0.000713085 4.57258 1.73256e-06H2.45387C1.06998 1.73256e-06 -0.0812292 1.15121 0.00449886 2.53512C0.653583 12.994 9.0182 21.3464 19.4648 21.9955C20.8487 22.0812 21.9999 20.93 21.9999 19.5461V17.4274C22.0121 16.1905 21.0814 15.1495 19.8444 15.0025Z"
+                                    fill="#2C2E2D" />
+                            </svg>
+                            <form action="#" class="hero-form">
+                                <input type="tel" id="phone" class="phone-mask" placeholder="Введите номер">
+                                <button class="btn hero-form__btn">
+                                    Оставить заявку
+                                    <svg width="27" height="24" viewBox="0 0 27 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.7944 13.0607C26.3802 12.4749 26.3802 11.5251 25.7944 10.9393L16.2484 1.3934C15.6627 0.807613 14.7129 0.807613 14.1271 1.3934C13.5413 1.97919 13.5413 2.92893 14.1271 3.51472L22.6124 12L14.1271 20.4853C13.5413 21.0711 13.5413 22.0208 14.1271 22.6066C14.7129 23.1924 15.6627 23.1924 16.2484 22.6066L25.7944 13.0607ZM0.0273436 13.5L24.7337 13.5L24.7337 10.5L0.0273439 10.5L0.0273436 13.5Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="hero-like">
+                            <svg width="29" height="25" viewBox="0 0 29 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.9732 0C18.2998 0 15.9591 1.15652 14.5 3.11141C13.0409 1.15652 10.7002 0 8.02679 0C5.89869 0.00241299 3.85844 0.853926 2.35364 2.36773C0.848846 3.88153 0.00239863 5.93399 0 8.07482C0 17.1916 13.4371 24.5709 14.0093 24.8757C14.1602 24.9573 14.3287 25 14.5 25C14.6713 25 14.8398 24.9573 14.9907 24.8757C15.5629 24.5709 29 17.1916 29 8.07482C28.9976 5.93399 28.1512 3.88153 26.6464 2.36773C25.1416 0.853926 23.1013 0.00241299 20.9732 0ZM14.5 22.7658C12.136 21.38 2.07143 15.0674 2.07143 8.07482C2.07348 6.48654 2.70158 4.96391 3.81798 3.84083C4.93438 2.71775 6.44796 2.08589 8.02679 2.08382C10.5449 2.08382 12.659 3.4331 13.542 5.60028C13.62 5.79138 13.7527 5.95482 13.9233 6.06985C14.0939 6.18488 14.2946 6.2463 14.5 6.2463C14.7054 6.2463 14.9061 6.18488 15.0767 6.06985C15.2473 5.95482 15.38 5.79138 15.458 5.60028C16.341 3.42919 18.4551 2.08382 20.9732 2.08382C22.552 2.08589 24.0656 2.71775 25.182 3.84083C26.2984 4.96391 26.9265 6.48654 26.9286 8.07482C26.9286 15.0569 16.8614 21.3787 14.5 22.7658Z"
+                                    fill="#2C2E2D" />
+                            </svg>
+                            <p><span> 245 заказчиков</span> уже обратились к нам</p>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <img src="img/presentation-hero.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="icon3"></div>
+        </section>
+        <section class="target" id="target">
+            <div class="icon4"></div>
+            <div class="container">
+                <div class="target-wrapper">
+                    <div class="target-title">
+                        Профессиональные презентации<br> для разных целей<span>.</span>
+                    </div>
+                    <div class="target-grid">
+                        <div class="target-item">
+                            <div class="target-img">
+                                <img src="img/target1.svg" alt="">
+                            </div>
+                            <div class="target-info">
+                                <h5>Для клиентов</h5>
+                                <p>
+                                    Презентация должна ёмко и убедительно донести ценности и пользу для потребителя.
+                                    Разработка продающих презентаций для тёплой, холодной и горячей аудиторий строится
+                                    по схожей структуре, но упор делает на разные акценты. Так для горячей аудитории
+                                    больше внимания уделяется решениям продукта, а для холодной — раскрытие болей и
+                                    проблем клиента
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="target-item">
+                            <div class="target-img">
+                                <img src="img/target2.svg" alt="">
+                            </div>
+                            <div class="target-info">
+                                <h5>Для коллег</h5>
+                                <p>
+                                    Презентации используется спикерами
+                                    на конференциях и других мероприятиях. Задача такой презентации — удержать внимание
+                                    с помощью логической структурой повествования, 1 мысль — 1 слайд.
+                                    В каждом слайде больше графических элементов, нежели текста
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="target-item">
+                            <div class="target-img">
+                                <img src="img/target3.svg" alt="">
+                            </div>
+                            <div class="target-info">
+                                <h5>Для партнёров</h5>
+                                <p>
+                                    Разработка дизайна презентации для получения инвестиций или заключение выгодных
+                                    партнёрств, а также продажу компании.<br>
+                                    Цель такого формата — понимание аудитории. Презентация для инвестора или партнёров
+                                    проводится с участием выступающего человека, где слайды подкрепляют речь, либо для
+                                    самостоятельного изучения целевой аудиторией
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio-wrapper">
+                    <div class="portfolio-title">Rexona, J7, MIRAITECH<span>.</span></div>
+                    <div class="portfolio-text">
+                        И ещё 100+ клиентов заказывают презентации именно у нас. Хотите знать почему?
+                        Просто посмотрите наши работы
+                    </div>
+                    <div class="portfolio-grid">
+                        <div class="portfolio-item" style="background-image: url(img/portfolio-bg1.png);">
+                            <div class="portfolio-item__inner">
+                                <div class="portfolio-item__logo">
+                                    <img src="img/portfolio1.svg" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Клиент:</h5>
+                                    <p>MIRAITECH</p>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Задача:</h5>
+                                    <p>
+                                        разработать <br>
+                                        корпоративную презентацию
+                                    </p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1rPuegaAsWsrJPNZiqv44Tod8MRKTAFbA/view"
+                                    target="_blank">
+                                    <button class="btn portfolio-info__btn">Показать детали</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" style="background-image: url(img/portfolio-bg2.png);">
+                            <div class="portfolio-item__inner">
+                                <div class="portfolio-item__logo">
+                                    <img src="img/portfolio2.svg" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Клиент:</h5>
+                                    <p>Rexona</p>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Задача:</h5>
+                                    <p>
+                                        разработать<br>
+                                        корпоративную презентацию
+                                    </p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1BXhxmwdVFZ7NmggT3SwvqVe8275DAM-s/view"
+                                    target="_blank">
+                                    <button class="btn portfolio-info__btn">Показать детали</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" style="background-image: url(img/portfolio-bg3.png);">
+                            <div class="portfolio-item__inner">
+                                <div class="portfolio-item__logo">
+                                    <img src="img/portfolio3.svg" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Клиент:</h5>
+                                    <p>ALPHA MANAGEMENT SERVICES</p>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Задача:</h5>
+                                    <p>
+                                        разработать <br>
+                                        коммерческое предложение
+                                    </p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1Ami2PRqJSwB9gMNBxKarvReUmeaU7n1Z/view"
+                                    target="_blank">
+                                    <button class="btn portfolio-info__btn">Показать детали</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" style="background-image: url(img/portfolio-bg4.png);">
+                            <div class="portfolio-item__inner">
+                                <div class="portfolio-item__logo">
+                                    <img src="img/portfolio4.svg" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Клиент:</h5>
+                                    <p>Engineering services</p>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Задача:</h5>
+                                    <p>
+                                        разработать <br>
+                                        корпоративную презентацию
+                                    </p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1GlBEjkq8DYPwU0HJ-dGRUPkFhxufNebI/view"
+                                    target="_blank">
+                                    <button class="btn portfolio-info__btn">Показать детали</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" style="background-image: url(img/portfolio-bg5.png);">
+                            <div class="portfolio-item__inner">
+                                <div class="portfolio-item__logo">
+                                    <img src="img/portfolio5.svg" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Клиент:</h5>
+                                    <p>торговая марка J7</p>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Задача:</h5>
+                                    <p>
+                                        разработать презентацию<br> для новой акции “Подарок<br> за покупку”
+                                    </p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1fcIiMv04FYE1c3BASinGkJPxfZKhlUGq/view"
+                                    target="_blank">
+                                    <button class="btn portfolio-info__btn">Показать детали</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" style="background-image: url(img/portfolio-bg6.png);">
+                            <div class="portfolio-item__inner">
+                                <div class="portfolio-item__logo">
+                                    <img src="img/portfolio6.svg" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Клиент:</h5>
+                                    <p>GYA</p>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Задача:</h5>
+                                    <p>
+                                        разработать <br>
+                                        корпоративную презентацию
+                                    </p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/173-Gt7rH5BCMiB8Gp1sr19zv1rdcPKdi/view?pli=1"
+                                    target="_blank">
+                                    <button class="btn portfolio-info__btn">Показать детали</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" style="background-image: url(img/portfolio-bg7.png);">
+                            <div class="portfolio-item__inner">
+                                <div class="portfolio-item__logo">
+                                    <img src="img/portfolio7.svg" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Клиент:</h5>
+                                    <p>Kidz n ’ Totz</p>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Задача:</h5>
+                                    <p>разработать<br>
+                                        корпоративную презентацию
+                                    </p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1julAbF4dyIvGTpfVGi-N_lClvvVIr4RL/view"
+                                    target="_blank">
+                                    <button class="btn portfolio-info__btn">Показать детали</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" style="background-image: url(img/portfolio-bg8.png);">
+                            <div class="portfolio-item__inner">
+                                <div class="portfolio-item__logo">
+                                    <img src="img/portfolio5.svg" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Клиент:</h5>
+                                    <p>Инвестиции</p>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Задача:</h5>
+                                    <p>
+                                        разработать <br>
+                                        коммерческое предложение
+                                    </p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1hPnt6joKBG-TV6p5uQwiF__SgN7khOI1/view"
+                                    target="_blank">
+                                    <button class="btn portfolio-info__btn">Показать детали</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" style="background-image: url(img/portfolio-bg9.png);">
+                            <div class="portfolio-item__inner">
+                                <div class="portfolio-item__logo">
+                                    <img src="img/portfolio9.svg" alt="">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Клиент:</h5>
+                                    <p>ФК Шахтер</p>
+                                </div>
+                                <div class="portfolio-info">
+                                    <h5>Задача:</h5>
+                                    <p>
+                                        разработать<br> корпоративную презентацию
+                                    </p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1FtqqnkzWpLTh7-X0EIGwODGMY4JJM7eM/view"
+                                    target="_blank">
+                                    <button class="btn portfolio-info__btn">Показать детали</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form" id="form">
+            <div class="icon11"></div>
+            <div class="form-m">
+                <div class="container">
+                    <div class="form-wrapper">
+                        <div class="form-block">
+                            <div class="form-block__title">
+                                Нужна презентация?
+                                <br>
+                                Решим задачу<br> любой сложности
+                            </div>
+                            <div class="form-block__text">
+                                Развивайте ваш бизнес в правильном<br> направлении вместе с <span>WEB</span>DIGITAL
+                            </div>
+                        </div>
+                        <div class="form-block">
+                            <div class="form-info">
+                                <span>Оставьте заявку</span> прямо сейчас и наш<br> менеджер свяжется с вами в течение
+                                часа
+                            </div>
+                            <form action="#" class="form-f">
+                                <div class="form-input">
+                                    <svg width="22" height="26" viewBox="0 0 22 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M14.533 15.744C14.374 15.692 13.369 15.239 13.997 13.33H13.988C15.625 11.644 16.876 8.931 16.876 6.26C16.876 2.153 14.145 0 10.971 0C7.795 0 5.079 2.152 5.079 6.26C5.079 8.942 6.323 11.666 7.97 13.348C8.612 15.032 7.464 15.657 7.224 15.745C3.9 16.947 0 19.138 0 21.301V22.112C0 25.059 5.714 25.729 11.002 25.729C16.298 25.729 21.94 25.059 21.94 22.112V21.301C21.94 19.073 18.021 16.899 14.533 15.744Z"
+                                            fill="#2C2E2D" />
+                                    </svg>
+
+                                    <input type="text" placeholder="Ваше имя">
+                                </div>
+                                <div class="form-input">
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19.8444 15.0025L16.7337 14.6473C16.368 14.6044 15.9972 14.6449 15.6493 14.7658C15.3015 14.8867 14.9855 15.0849 14.7252 15.3454L12.4718 17.5989C8.99516 15.8307 6.1693 13.0048 4.40113 9.52812L6.6668 7.26243C7.19341 6.73582 7.4506 6.001 7.36487 5.25394L7.00971 2.16771C6.94028 1.57027 6.65356 1.01924 6.20415 0.61951C5.75475 0.219784 5.17404 -0.000713085 4.57258 1.73256e-06H2.45387C1.06998 1.73256e-06 -0.0812292 1.15121 0.00449886 2.53512C0.653583 12.994 9.0182 21.3464 19.4648 21.9955C20.8487 22.0812 21.9999 20.93 21.9999 19.5461V17.4274C22.0121 16.1905 21.0814 15.1495 19.8444 15.0025Z"
+                                            fill="#2C2E2D" />
+                                    </svg>
+
+                                    <input type="tel" id="form-phone" class="phone-mask" placeholder="Ваш номер">
+                                </div>
+                                <button class="form-btn btn">
+                                    Оставить заявку
+                                    <img src="img/arrow-white.svg" alt="">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recipe" id="recipe">
+            <div class="icon9"></div>
+            <div class="icon10"></div>
+            <div class="container">
+                <div class="recipe-wrapper">
+                    <div class="recipe-title">
+                        Рецепт идеальной презентации <span>.</span>
+                    </div>
+                    <div class="recipe-text">
+                        Дизайнеры и копирайтеры из WEBDIGITAL превращают идею в результат, которым вы будете гордиться
+                    </div>
+                    <div class="recipe-grid">
+                        <div class="recipe-item">
+                            <img src="img/recipe1.svg" alt="" class="recipe-image">
+                            <p>Определив преимущества продукта или услуги,<br> сформулировать главную цель</p>
+                        </div>
+                        <div class="recipe-item">
+                            <img src="img/recipe2.svg" alt="" class="recipe-image">
+                            <p>Подготовив правильную структуру, выстроить<br> аргументы и доказательства</p>
+                        </div>
+                        <div class="recipe-item">
+                            <img src="img/recipe3.svg" alt="" class="recipe-image">
+                            <p>Написать интересные и понятные тексты<br> без воды и мусора</p>
+                        </div>
+                        <div class="recipe-item">
+                            <img src="img/recipe4.svg" alt="" class="recipe-image">
+                            <p>Разработка слайдов с учетом визуального<br> оформления и использования подходящих<br>
+                                графических элементов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team" id="team">
+            <div class="container">
+                <div class="team-wrapper">
+                    <div class="team-title">
+                        Познакомьтесь с нашей <br>
+                        командой профессионалов <span>.</span>
+                    </div>
+                    <div class="team-text">
+                        Наша команда состоит из экспертов в области маркетинговых стратегий, рекламы, контента, дизайна
+                        и аналитики. Мы стремимся к достижению наилучших результатов для наших клиентов и предлагаем
+                        индивидуальный подход
+                    </div>
+                    <div class="team-slider">
+                        <div class="swiper" id="teamSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="team-item">
+                                        <div class="team-img">
+                                            <img src="img/team1.svg" alt="">
+                                        </div>
+                                        <div class="team-info">
+                                            <h5>Галцэн</h5>
+                                            <p>СЕО / Маркетолог</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="team-item">
+                                        <div class="team-img">
+                                            <img src="img/team2.png" alt="">
+                                        </div>
+                                        <div class="team-info">
+                                            <h5>Дарья</h5>
+                                            <p>UX&UI Senior Веб-дизайнер</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="team-item">
+                                        <div class="team-img">
+                                            <img src="img/team3.svg" alt="">
+                                        </div>
+                                        <div class="team-info">
+                                            <h5>Шокан</h5>
+                                            <p>Full-stack разработчик</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="team-item">
+                                        <div class="team-img">
+                                            <img src="img/team4.png" alt="">
+                                        </div>
+                                        <div class="team-info">
+                                            <h5>Полина</h5>
+                                            <p>UX&UI Senior Веб-дизайнер</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="team-item">
+                                        <div class="team-img">
+                                            <img src="img/team4.png" alt="">
+                                        </div>
+                                        <div class="team-info">
+                                            <h5>Полина</h5>
+                                            <p>UX&UI Senior Веб-дизайнер</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination" id="teamPagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pprice" id="pprice">
+            <div class="pprice-inner">
+                <div class="container">
+                    <div class="pprice-wrapper">
+                        <div class="pprice-title">
+                            Стоимость услуг.
+                        </div>
+                        <div class="pprice-grid">
+                            <div class="pprice-item">
+                                <div class="pprice-item__content">
+                                    <div>
+                                        <div class="pprice-item__title">Минимальный.</div>
+                                        <div class="pprice-item__deadline">7 - 14 дней</div>
+                                        <div class="pprice-item__price">
+                                            <span>от</span>
+                                            4000
+                                            <svg width="33" height="38" viewBox="0 0 33 38" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.04445 8.48644e-05C0.908469 -0.00166081 0.773488 0.0235409 0.647275 0.0742388C0.521063 0.124937 0.406111 0.20013 0.309036 0.29549C0.211961 0.39085 0.134681 0.504493 0.0816433 0.629879C0.028606 0.755264 0.000859158 0.889915 0 1.02608V5.56294C0 6.13789 0.470249 6.60876 1.04445 6.60876H31.9753C32.1113 6.6079 32.2457 6.58012 32.3709 6.52701C32.4962 6.4739 32.6097 6.39652 32.7049 6.29932C32.8001 6.20211 32.8752 6.08701 32.9259 5.96063C32.9765 5.83425 33.0017 5.69909 32.9999 5.56294V1.02608C33.001 0.891039 32.9753 0.757128 32.9242 0.632152C32.8731 0.507175 32.7976 0.393632 32.7023 0.298139C32.6069 0.202646 32.4935 0.127113 32.3687 0.075942C32.2439 0.0247707 32.1101 -0.00101578 31.9753 8.48644e-05H1.04445ZM1.04445 11.5653C0.770711 11.5648 0.507765 11.6721 0.31236 11.8641C0.116956 12.056 0.004764 12.3172 0 12.5913V17.1281C0 17.7031 0.470249 18.1739 1.04445 18.1739H13.2V36.974C13.2 37.5473 13.6521 38 14.2246 38H18.7753C18.9102 38.0011 19.0439 37.9753 19.1687 37.9241C19.2935 37.8729 19.4069 37.7974 19.5023 37.7019C19.5977 37.6064 19.6731 37.4929 19.7242 37.3679C19.7753 37.2429 19.801 37.109 19.7999 36.974V18.1739H31.9753C32.1113 18.1731 32.2457 18.1453 32.3709 18.0922C32.4962 18.0391 32.6097 17.9617 32.7049 17.8645C32.8001 17.7673 32.8752 17.6522 32.9259 17.5258C32.9765 17.3994 33.0017 17.2643 32.9999 17.1281V12.5913C32.9995 12.3193 32.8914 12.0586 32.6993 11.8663C32.5073 11.6739 32.2469 11.5657 31.9753 11.5653H1.04445Z"
+                                                    fill="#5F4FD6" />
+                                            </svg>
+
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                У вас есть готовый текст или<br> старая презентация, которую<br> нужно
+                                                грамотно оформить
+                                            </li>
+                                            <li>
+                                                Графические элементы
+                                            </li>
+                                            <li>
+                                                Стили шрифтов
+                                            </li>
+                                            <li>
+                                                Взаиморасположение графики
+                                            </li>
+                                            <li>
+                                                Верстка элементов
+                                            </li>
+                                            <li>
+                                                Разработка концепции дизайн
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="">
+                                        <button class="btn pprice-item__btn">
+                                            Оставить заявку
+                                            <img src="img/arrow-white.svg" alt="">
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="pprice-item max">
+                                <div class="pprice-item__content">
+                                    <!--  -->
+                                    <div>
+                                        <div class="pprice-item__title">Максимальный.</div>
+                                        <div class="pprice-item__deadline">20-30 дней</div>
+                                        <div class="pprice-item__price">
+                                            <span>от</span>
+                                            6000
+                                            <svg width="33" height="38" viewBox="0 0 33 38" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1.04445 8.48644e-05C0.908469 -0.00166081 0.773488 0.0235409 0.647275 0.0742388C0.521063 0.124937 0.406111 0.20013 0.309036 0.29549C0.211961 0.39085 0.134681 0.504493 0.0816433 0.629879C0.028606 0.755264 0.000859158 0.889915 0 1.02608V5.56294C0 6.13789 0.470249 6.60876 1.04445 6.60876H31.9753C32.1113 6.6079 32.2457 6.58012 32.3709 6.52701C32.4962 6.4739 32.6097 6.39652 32.7049 6.29932C32.8001 6.20211 32.8752 6.08701 32.9259 5.96063C32.9765 5.83425 33.0017 5.69909 32.9999 5.56294V1.02608C33.001 0.891039 32.9753 0.757128 32.9242 0.632152C32.8731 0.507175 32.7976 0.393632 32.7023 0.298139C32.6069 0.202646 32.4935 0.127113 32.3687 0.075942C32.2439 0.0247707 32.1101 -0.00101578 31.9753 8.48644e-05H1.04445ZM1.04445 11.5653C0.770711 11.5648 0.507765 11.6721 0.31236 11.8641C0.116956 12.056 0.004764 12.3172 0 12.5913V17.1281C0 17.7031 0.470249 18.1739 1.04445 18.1739H13.2V36.974C13.2 37.5473 13.6521 38 14.2246 38H18.7753C18.9102 38.0011 19.0439 37.9753 19.1687 37.9241C19.2935 37.8729 19.4069 37.7974 19.5023 37.7019C19.5977 37.6064 19.6731 37.4929 19.7242 37.3679C19.7753 37.2429 19.801 37.109 19.7999 36.974V18.1739H31.9753C32.1113 18.1731 32.2457 18.1453 32.3709 18.0922C32.4962 18.0391 32.6097 17.9617 32.7049 17.8645C32.8001 17.7673 32.8752 17.6522 32.9259 17.5258C32.9765 17.3994 33.0017 17.2643 32.9999 17.1281V12.5913C32.9995 12.3193 32.8914 12.0586 32.6993 11.8663C32.5073 11.6739 32.2469 11.5657 31.9753 11.5653H1.04445Z"
+                                                    fill="#5F4FD6" />
+                                            </svg>
+    
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Если у вас нет понимания<br> о чём и что писать
+                                            </li>
+                                            <li>
+                                                Мы погрузимся в тему. Определим ключевые смыслы и подготовим структуру и
+                                                напишем тексты
+                                            </li>
+                                            <li>
+                                                Графические элементы
+                                            </li>
+                                            <li>
+                                                Стили шрифтов
+                                            </li>
+                                            <li>
+                                                Взаиморасположение графики
+                                            </li>
+                                            <li>
+                                                Верстка элементов
+                                            </li>
+                                            <li>
+                                                Разработка концепции дизайн
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="">
+                                        <button class="btn pprice-item__btn">
+                                            Оставить заявку
+                                            <img src="img/arrow-white.svg" alt="">
+                                        </button>
+                                    </a>
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review" id="review">
+            <div class="icon13"></div>
+            <div class="icon14"></div>
+            <div class="container">
+                <div class="review-wrapper">
+                    <div class="review-title">
+                        Что говорят клиенты о нас
+                        <span>.</span>
+                    </div>
+                    <div class="review-slider">
+                        <div class="swiper" id="reviewSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="review-item">
+                                        <div class="review-item__inner">
+                                            <div class="review-top">
+                                                <p>5.0</p>
+                                                <div class="review-rate">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-text">
+                                                “Очень классная компания, за короткий срок и за приемлемые средства,
+                                                создала профессиональный информационный сайт, тех. поддержка на связи
+                                                постоянно, все вопросы решаются оперативно. Спасибо всей команде”
+                                            </div>
+                                        </div>
+                                        <div class="review-user">
+                                            <div class="review-icon">A</div>
+                                            <div class="review-user__info">
+                                                <h5>Асхат</h5>
+                                                <p>Директор, kurskz.kz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-item"
+                                        style="background: linear-gradient(125deg, rgba(168, 202, 242, 0.20) 3.1%, rgba(127, 181, 243, 0.20) 96.79%);">
+                                        <div class="review-item__inner">
+                                            <div class="review-top">
+                                                <p>5.0</p>
+                                                <div class="review-rate">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-text">
+                                                “Благодарю всю команду Web Digital
+                                                за работу над моим сайтом! Очень крутые ребята - исполнительные,
+                                                понятливые, ответственные и что удобно всегда на связи! Сайт получился
+                                                именно таким, как я хотела, учитывая, что его сделали полноценным
+                                                образовательным порталом, то есть ребятами сами верстали, и это не
+                                                Тильда и нет GetCourse, и не просто лэндинг&#41; Но помимо всего
+                                                остального даже чисто по-человечески было приятно с ними работать!
+                                                Обязательно буду ещё обращаться!”
+                                            </div>
+                                        </div>
+                                        <div class="review-user">
+                                            <div class="review-icon">М</div>
+                                            <div class="review-user__info">
+                                                <h5>Меруерт</h5>
+                                                <p>Директор, Dualingo.kz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-item">
+                                        <div class="review-item__inner">
+                                            <div class="review-top">
+                                                <p>5.0</p>
+                                                <div class="review-rate">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-text">
+                                                “Очень классная компания, за короткий срок и за приемлемые средства,
+                                                создала профессиональный информационный сайт, тех. поддержка на связи
+                                                постоянно, все вопросы решаются оперативно. Спасибо всей команде”
+                                            </div>
+                                        </div>
+                                        <div class="review-user">
+                                            <div class="review-icon">A</div>
+                                            <div class="review-user__info">
+                                                <h5>Асхат</h5>
+                                                <p>Директор, kurskz.kz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review-item">
+                                        <div class="review-item__inner">
+                                            <div class="review-top">
+                                                <p>5.0</p>
+                                                <div class="review-rate">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                    <img src="img/star.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="review-text">
+                                                “Очень классная компания, за короткий срок и за приемлемые средства,
+                                                создала профессиональный информационный сайт, тех. поддержка на связи
+                                                постоянно, все вопросы решаются оперативно. Спасибо всей команде”
+                                            </div>
+                                        </div>
+                                        <div class="review-user">
+                                            <img src="img/a.svg" alt="">
+                                            <div class="review-user__info">
+                                                <h5>Асхат</h5>
+                                                <p>Директор, kurskz.kz</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination" id="reviewPagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="icon15"></div>
+        <div class="icon16"></div>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-block">
+                    <div class="footer-logo">
+                        <span>WEB</span>DIGITAL
+                    </div>
+                    <div class="footer-text">
+                        Диджитал агенство по разработке <br>
+                        и продвижению сайтов в СНГ, Европе и Казахстане
+                    </div>
+                    <div class="footer-copy">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.916 4.998C7.812 5.04 8.043 5.803 8.057 6.16H9.31C9.254 4.774 8.267 3.927 6.895 3.927C5.348 3.927 4.2 4.9 4.2 7.098C4.2 8.456 4.851 10.066 6.888 10.066C8.442 10.066 9.275 8.911 9.296 8.001H8.043C8.022 8.414 7.728 8.967 6.902 9.009C5.985 8.981 5.6 8.267 5.6 7.098C5.6 5.075 6.496 5.012 6.916 4.998ZM7 0C3.136 0 0 3.136 0 7C0 10.864 3.136 14 7 14C10.864 14 14 10.864 14 7C14 3.136 10.864 0 7 0ZM7 12.6C3.913 12.6 1.4 10.087 1.4 7C1.4 3.913 3.913 1.4 7 1.4C10.087 1.4 12.6 3.913 12.6 7C12.6 10.087 10.087 12.6 7 12.6Z"
+                                fill="#ECF7F5" />
+                        </svg>
+                        Все права защищены Web Digital 2023
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <a href="index.html#service">
+                        Наши услуги
+                    </a>
+                    <a href="index.html#process">
+                        Процесс раборты
+                    </a>
+                    <a href="index.html#price">
+                        Прайс лист
+                    </a>
+                    <a href="index.html#site">
+                        Портфолио
+                    </a>
+                    <a href="index.html#review">
+                        Отзывы
+                    </a>
+                </div>
+                <div class="footer-media">
+                    <a href="tel:+77073334386" class="footer-item">
+                        <img src="img/tel.svg" alt="">
+                        +7 (707) 333-43-86
+                    </a>
+                    <a href="mailto:webdigitalkz@gmail.com" class="footer-item">
+                        <img src="img/email.svg" alt="">
+                        webdigitalkz@gmail.com
+                    </a>
+                    <div class="footer-item">
+                        <img src="img/address.svg" alt="">
+                        Казахстан, г. Алматы, Самал 2, 58
+                    </div>
+                    <div class="footer-inner">
+                        <a href="https://t.me/Galtsenc">
+                            <img src="img/teg.svg" alt="">
+                        </a>
+                        <a href="https://wa.me/+77073334386">
+                            <img src="img/whatsapp.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icon17"></div>
+        <div class="icon18"></div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/imask"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.min.js"></script>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/links.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/wow-init.js"></script>
+</body>
+
+</html>
