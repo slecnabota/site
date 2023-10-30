@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="css/presentation.min.css">
 </head>
 
 <body>
     <!-- wow animate__animated animate__fadeInDown -->
-    <header class="header" id="header">
+    <header class="header wow animate__animated animate__fadeInDown" id="header">
         <div class="container">
             <div class="header-wrapper">
                 <a href="index.html">
@@ -179,7 +180,7 @@
             <div class="icon4"></div>
             <div class="container">
                 <div class="target-wrapper">
-                    <div class="target-title">
+                    <div class="target-title wow__main animate__animated animate__fadeInDown">
                         Профессиональные презентации<br> для разных целей<span>.</span>
                     </div>
                     <div class="target-grid">
@@ -237,7 +238,7 @@
         <section class="portfolio" id="portfolio">
             <div class="container">
                 <div class="portfolio-wrapper">
-                    <div class="portfolio-title">Rexona, J7, MIRAITECH<span>.</span></div>
+                    <div class="portfolio-title wow__main animate__animated animate__fadeInDown">Rexona, J7, MIRAITECH<span>.</span></div>
                     <div class="portfolio-text">
                         И ещё 100+ клиентов заказывают презентации именно у нас. Хотите знать почему?
                         Просто посмотрите наши работы
@@ -447,7 +448,7 @@
             <div class="form-m">
                 <div class="container">
                     <div class="form-wrapper">
-                        <div class="form-block">
+                        <div class="form-block wow__main animate__animated animate__fadeInLeft">
                             <div class="form-block__title">
                                 Нужна презентация?
                                 <br>
@@ -498,7 +499,7 @@
             <div class="icon10"></div>
             <div class="container">
                 <div class="recipe-wrapper">
-                    <div class="recipe-title">
+                    <div class="recipe-title wow__main animate__animated animate__fadeInDown">
                         Рецепт идеальной презентации<span>.</span>
                     </div>
                     <div class="recipe-text">
@@ -529,7 +530,7 @@
         <section class="team" id="team">
             <div class="container">
                 <div class="team-wrapper">
-                    <div class="team-title">
+                    <div class="team-title wow__main animate__animated animate__fadeInDown">
                         Познакомьтесь с нашей <br>
                         командой профессионалов<span>.</span>
                     </div>
@@ -618,7 +619,7 @@
             <div class="pprice-inner">
                 <div class="container">
                     <div class="pprice-wrapper">
-                        <div class="pprice-title">
+                        <div class="pprice-title wow__main animate__animated animate__fadeInDown">
                             Стоимость услуг.
                         </div>
                         <div class="pprice-grid">
@@ -729,7 +730,7 @@
             <div class="icon14"></div>
             <div class="container">
                 <div class="review-wrapper">
-                    <div class="review-title">
+                    <div class="review-title wow__main animate__animated animate__fadeInDown">
                         Что говорят клиенты о нас<span>.</span>
                     </div>
                     <div class="review-slider">
@@ -927,16 +928,19 @@
         <div class="icon17"></div>
         <div class="icon18"></div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/imask"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://cdn.rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.min.js"></script>
-
-    <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/header.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/mask.js"></script>
     <script src="js/links.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW({
+            boxClass: 'wow__main' // Указать новое имя класса здесь
+        }).init();
+    </script>
     
 </body>
 
