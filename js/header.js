@@ -26,5 +26,4 @@ function closeLink() {
   document.body.classList.toggle("lock");
   arrowBurger.classList.toggle("active");
   bodyBurger.classList.toggle("active");
-  openPop();
 }
