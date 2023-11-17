@@ -15,8 +15,8 @@ arrowBurger.addEventListener("click", function (e) {
   bodyBurger.classList.toggle("active");
 });
 function openPop() {
-    let op = document.getElementById("op");
-    op.classList.toggle("active")
+  let op = document.getElementById("op");
+  op.classList.toggle("active");
 }
 const links = document.querySelectorAll(".links a");
 links.forEach((link) => {

@@ -1,67 +1,70 @@
-const team = new Swiper("#teamSwiper", {
+const service = new Swiper("#serviceSwiper", {
   direction: "horizontal",
-  loop: true,
-  pagination: {
-    el: "#teamPagination",
-    clickable: true,
+  loop: false,
+  mousewheel: true,
+  navigation: {
+    nextEl: '#serviceNext', 
+    prevEl: '#servicePrev',
   },
-  effect: "slide", 
-  speed: 800,
   breakpoints: {
     320: {
-      slidesPerView: 1,
-      spaceBetween: 50,
+      slidesPerView: 1.3,
+      spaceBetween: 20,
     },
-    550: {
+    768: {
       slidesPerView: 3,
-      spaceBetween: 45,
+      spaceBetween: 20,
     },
-    992: {
-      slidesPerView: 3,
-      spaceBetween: 45,
-    },
-    1300: {
-      slidesPerView: 4,
-      spaceBetween: 50,
-    },
-  },
-  autoplay: {
-    autoplay: {
-      delay: 800,
+    1024: {
+      slidesPerView: 2.5,
+      spaceBetween: 20,
     },
   },
 });
 
-const review = new Swiper("#reviewSwiper", {
+const partner = new Swiper("#partnerSwiper", {
   direction: "horizontal",
   loop: true,
-  pagination: {
-    el: "#reviewPagination",
-    clickable: true,
-  },
-  effect: "slide", 
+  mousewheel: true,
   speed: 800,
+  autoplay: {
+    delay: 1000,
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 6,
+      spaceBetween: 20,
+    },
+  },
+});
+const post = new Swiper("#postSwiper", {
+  direction: "horizontal",
+  loop: false,
+  mousewheel: true,
+  navigation: {
+    nextEl: '#postNext', 
+    prevEl: '#postPrev',
+  },
   breakpoints: {
     320: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    650: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    992: {
+    1024: {
       slidesPerView: 3,
       spaceBetween: 20,
-    },
-    1300: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-  },
-  autoplay: {
-    autoplay: {
-      delay: 800,
     },
   },
 });
