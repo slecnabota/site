@@ -9,11 +9,13 @@ window.addEventListener("scroll", function () {
 });
 const arrowBurger = document.querySelector(".burger");
 const bodyBurger = document.querySelector(".header__mobile");
-arrowBurger.addEventListener("click", function (e) {
-  document.body.classList.toggle("lock");
-  arrowBurger.classList.toggle("active");
-  bodyBurger.classList.toggle("active");
-});
+if (arrowBurger) {
+  arrowBurger.addEventListener("click", function (e) {
+    document.body.classList.toggle("lock");
+    arrowBurger.classList.toggle("active");
+    bodyBurger.classList.toggle("active");
+  });
+}
 function openPop() {
   let op = document.getElementById("op");
   op.classList.toggle("active");
