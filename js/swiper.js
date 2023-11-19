@@ -7,15 +7,23 @@ const service = new Swiper("#serviceSwiper", {
     prevEl: '#servicePrev',
   },
   breakpoints: {
-    320: {
-      slidesPerView: 1.3,
+    370: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    370: {
+      slidesPerView: 1.2,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2.5,
       spaceBetween: 20,
     },
-    1024: {
+    1024:{
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1200: {
       slidesPerView: 2.5,
       spaceBetween: 20,
     },
@@ -55,11 +63,11 @@ const post = new Swiper("#postSwiper", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
-    768: {
-      slidesPerView: 2,
+    475: {
+      slidesPerView: 2.8,
       spaceBetween: 20,
     },
     1024: {
