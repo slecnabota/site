@@ -18,13 +18,13 @@
     <header class="header" id="header">
         <div class="container">
             <div class="row header__wrapper">
-                <div class="col-sm-2 col-lg-3 col-xl-3">
+                <div class="col-sm-2 col-lg-3 col-xl-3 col__left">
                     <a href="index.html" class="header-logo">
                         <img src="img/header-logo.svg" alt="" class="header-logo">
                         <span>сертифицированное бюро переводов</span>
                     </a>
                 </div>
-                <div class="col-sm-10 col-lg-9">
+                <div class="col-sm-10 col-lg-9 col__right">
                     <div class="header-inner">
                         <div class="header-top">
                             <div class="header-media">
@@ -66,7 +66,7 @@
                                 <a href="">QAZ</a>
                             </div>
                         </div>
-                        <div class="menu" id="menu">
+                        <div class="menu" id="menu" onclick="openMenu()">
                             <img src="img/burger.svg" alt="">
                         </div>
                         <div class="header-bottom">
@@ -143,13 +143,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="header__menu">
+                        <div class="header__menu active">
                             <div class="header__content">
+                                <div class="header__close">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.5 7.5L7.5 22.5" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.5 7.5L22.5 22.5" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
                                 <div class="header__parent">
                                     <a href="index.html">Главная</a>
                                     <a href="about.html">О компании</a>
                                     <div class="header__pop">
-                                        <div class="header__p">Услуги и цены</div>
+                                        <div class="header__p">
+                                            Услуги и цены
+                                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5 7L8.5 13L2.5 7" stroke="#323232" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
                                         <div class="header__c">
                                             <a href="service.html#verbal">Устный перевод</a>
                                             <a href="service.html#written">Письменный перевод</a>
@@ -248,259 +265,248 @@
             </div>
         </section>
         <section class="section__l service" id="service">
-                <div class="row">
-                    <div class="col-sm-12 col-lg-3">
-                        <div class="container">
-                            <h3 class="heading">Наши услуги</h3>
-                        </div>
+            <div class="row">
+                <div class="col-sm-12 col-lg-3">
+                    <div class="container">
+                        <h3 class="heading">Наши услуги</h3>
                     </div>
-                    <div class="col-sm-12 col-lg-9">
-                        <div class="service__inner">
-                            <h2>Мы предлагаем полный спектр переводческих услуг. </h2>
-                            <h3>Работаем с любыми узкоотраслевыми документами и переводим на все языки Европы, СНГ и
-                                редкие языки мира.</h3>
-                            <div class="service__slider">
-                                <div class="swiper" id="serviceSwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="service__item">
-                                                <div class="service__content">
-                                                    <div class="service__image">
-                                                        <img src="img/service-1.svg" alt="">
-                                                    </div>
-                                                    <h3>Устный перевод</h3>
-                                                    <div class="service__line"></div>
-                                                    <p>
-                                                        Мы предоставляем все виды услуг по устному переводу в любых
-                                                        ситуациях, будь то деловые встречи, конференции, форумы,
-                                                        семинары
-                                                        или сопровождение в международных поездках.
-                                                    </p>
+                </div>
+                <div class="col-sm-12 col-lg-9">
+                    <div class="service__inner">
+                        <h2>Мы предлагаем полный спектр переводческих услуг. </h2>
+                        <h3>Работаем с любыми узкоотраслевыми документами и переводим на все языки Европы, СНГ и
+                            редкие языки мира.</h3>
+                        <div class="service__slider">
+                            <div class="swiper" id="serviceSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="service__item">
+                                            <div class="service__content">
+                                                <div class="service__image">
+                                                    <img src="img/service-1.svg" alt="">
                                                 </div>
-                                                <a href="service.html#verbal" class="service__btn">
-                                                    Подробнее
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
+                                                <h3>Устный перевод</h3>
+                                                <div class="service__line"></div>
+                                                <p>
+                                                    Мы предоставляем все виды услуг по устному переводу в любых
+                                                    ситуациях, будь то деловые встречи, конференции, форумы,
+                                                    семинары
+                                                    или сопровождение в международных поездках.
+                                                </p>
                                             </div>
+                                            <a href="service.html#verbal" class="service__btn">
+                                                Подробнее
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="service__item">
-                                                <div class="service__content">
-                                                    <div class="service__image">
-                                                        <img src="img/service-2.svg" alt="">
-                                                    </div>
-                                                    <h3>Письменный перевод</h3>
-                                                    <div class="service__line"></div>
-                                                    <p>
-                                                        Услуги письменного перевода от наших квалифицированных
-                                                        переводчиков, с соблюдением спецификации и терминологии.
-                                                    </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="service__item">
+                                            <div class="service__content">
+                                                <div class="service__image">
+                                                    <img src="img/service-2.svg" alt="">
                                                 </div>
-                                                <a href="service.html#written" class="service__btn">
-                                                    Подробнее
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
+                                                <h3>Письменный перевод</h3>
+                                                <div class="service__line"></div>
+                                                <p>
+                                                    Услуги письменного перевода от наших квалифицированных
+                                                    переводчиков, с соблюдением спецификации и терминологии.
+                                                </p>
                                             </div>
+                                            <a href="service.html#written" class="service__btn">
+                                                Подробнее
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="service__item">
-                                                <div class="service__content">
-                                                    <div class="service__image">
-                                                        <img src="img/service-3.svg" alt="">
-                                                    </div>
-                                                    <h3>Перевод чертежей</h3>
-                                                    <div class="service__line"></div>
-                                                    <p>
-                                                        Мы предоставляем перевод нормативных документов и строительных
-                                                        стандартов, чтобы ваши проекты соответствовали местным нормам и
-                                                        требованиям.
-                                                    </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="service__item">
+                                            <div class="service__content">
+                                                <div class="service__image">
+                                                    <img src="img/service-3.svg" alt="">
                                                 </div>
-                                                <a href="service.html#drawings" class="service__btn">
-                                                    Подробнее
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
+                                                <h3>Перевод чертежей</h3>
+                                                <div class="service__line"></div>
+                                                <p>
+                                                    Мы предоставляем перевод нормативных документов и строительных
+                                                    стандартов, чтобы ваши проекты соответствовали местным нормам и
+                                                    требованиям.
+                                                </p>
                                             </div>
+                                            <a href="service.html#drawings" class="service__btn">
+                                                Подробнее
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="service__item">
-                                                <div class="service__content">
-                                                    <div class="service__image">
-                                                        <img src="img/service-4.svg" alt="">
-                                                    </div>
-                                                    <h3>Редактирование</h3>
-                                                    <div class="service__line"></div>
-                                                    <p>
-                                                        Оценка соответствия переводимого текста оригиналу по контексту,
-                                                        точности, полноте, стилистике и правилам языка.
-                                                    </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="service__item">
+                                            <div class="service__content">
+                                                <div class="service__image">
+                                                    <img src="img/service-4.svg" alt="">
                                                 </div>
-                                                <a href="service.html#editing" class="service__btn">
-                                                    Подробнее
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
+                                                <h3>Редактирование</h3>
+                                                <div class="service__line"></div>
+                                                <p>
+                                                    Оценка соответствия переводимого текста оригиналу по контексту,
+                                                    точности, полноте, стилистике и правилам языка.
+                                                </p>
                                             </div>
+                                            <a href="service.html#editing" class="service__btn">
+                                                Подробнее
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
                                         </div>
+                                    </div>
 
-                                        <div class="swiper-slide">
-                                            <div class="service__item">
-                                                <div class="service__content">
-                                                    <div class="service__image">
-                                                        <img src="img/service-5.svg" alt="">
-                                                    </div>
-                                                    <h3>Нотариальное заверение </h3>
-                                                    <div class="service__line"></div>
-                                                    <p>
-                                                        Нотариальное заверение переведенных документов обеспечивает их
-                                                        официальный статус и подтверждает правильность и достоверность.
-                                                    </p>
+                                    <div class="swiper-slide">
+                                        <div class="service__item">
+                                            <div class="service__content">
+                                                <div class="service__image">
+                                                    <img src="img/service-5.svg" alt="">
                                                 </div>
-                                                <a href="service.html#assurance" class="service__btn">
-                                                    Подробнее
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
+                                                <h3>Нотариальное заверение </h3>
+                                                <div class="service__line"></div>
+                                                <p>
+                                                    Нотариальное заверение переведенных документов обеспечивает их
+                                                    официальный статус и подтверждает правильность и достоверность.
+                                                </p>
                                             </div>
+                                            <a href="service.html#assurance" class="service__btn">
+                                                Подробнее
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="service__item">
-                                                <div class="service__content">
-                                                    <div class="service__image">
-                                                        <img src="img/service-6.svg" alt="">
-                                                    </div>
-                                                    <h3>Заверение печатью компании</h3>
-                                                    <div class="service__line"></div>
-                                                    <p>
-                                                        Заверение переведенного документа печатью
-                                                        сертифицированного/присяжного переводчика для предоставления в
-                                                        государственные органы и организации.
-                                                    </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="service__item">
+                                            <div class="service__content">
+                                                <div class="service__image">
+                                                    <img src="img/service-6.svg" alt="">
                                                 </div>
-                                                <a href="service.html#stamp" class="service__btn">
-                                                    Подробнее
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
+                                                <h3>Заверение печатью компании</h3>
+                                                <div class="service__line"></div>
+                                                <p>
+                                                    Заверение переведенного документа печатью
+                                                    сертифицированного/присяжного переводчика для предоставления в
+                                                    государственные органы и организации.
+                                                </p>
                                             </div>
+                                            <a href="service.html#stamp" class="service__btn">
+                                                Подробнее
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="service__item">
-                                                <div class="service__content">
-                                                    <div class="service__image">
-                                                        <img src="img/service-7.svg" alt="">
-                                                    </div>
-                                                    <h3>Организация мероприятий </h3>
-                                                    <div class="service__line"></div>
-                                                    <p>
-                                                        Оказание организационных услуг на различных мероприятиях, прием
-                                                        и сопровождение гостей. Аренда оборудования для синхронного
-                                                        перевода для конференций и деловых встреч.
-                                                    </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="service__item">
+                                            <div class="service__content">
+                                                <div class="service__image">
+                                                    <img src="img/service-7.svg" alt="">
                                                 </div>
-                                                <a href="service.html#organization" class="service__btn">
-                                                    Подробнее
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
+                                                <h3>Организация мероприятий </h3>
+                                                <div class="service__line"></div>
+                                                <p>
+                                                    Оказание организационных услуг на различных мероприятиях, прием
+                                                    и сопровождение гостей. Аренда оборудования для синхронного
+                                                    перевода для конференций и деловых встреч.
+                                                </p>
                                             </div>
+                                            <a href="service.html#organization" class="service__btn">
+                                                Подробнее
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
                                         </div>
-                                        <div class="swiper-slide">
-                                            <div class="service__item">
-                                                <div class="service__content">
-                                                    <div class="service__image">
-                                                        <img src="img/service-7.svg" alt="">
-                                                    </div>
-                                                    <h3>Лингвистический аудит</h3>
-                                                    <div class="service__line"></div>
-                                                    <p>
-                                                        Анализ и оценка языковых и коммуникативных аспектов внутри
-                                                        организации.
-                                                    </p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="service__item">
+                                            <div class="service__content">
+                                                <div class="service__image">
+                                                    <img src="img/service-7.svg" alt="">
                                                 </div>
-                                                <a href="service.html#audit" class="service__btn">
-                                                    Подробнее
-                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round" />
-                                                    </svg>
-                                                </a>
+                                                <h3>Лингвистический аудит</h3>
+                                                <div class="service__line"></div>
+                                                <p>
+                                                    Анализ и оценка языковых и коммуникативных аспектов внутри
+                                                    организации.
+                                                </p>
                                             </div>
+                                            <a href="service.html#audit" class="service__btn">
+                                                Подробнее
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3.33325 10H16.6666" stroke="#0056A2" stroke-width="2"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M11.6667 5L16.6667 10L11.6667 15" stroke="#0056A2"
+                                                        stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="service__arrows">
-                                    <div class="swiper-button-prev" id="servicePrev">
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M20.5 12.5H4.5" stroke="#0056A2" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M10.5 6.5L4.5 12.5L10.5 18.5" stroke="#0056A2" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
-                                    <div class="swiper-button-next" id="serviceNext">
-                                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.5 12.5H20.5" stroke="#0056A2" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M14.5 6.5L20.5 12.5L14.5 18.5" stroke="#0056A2" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </div>
+                            <div class="service__arrows">
+                                <div class="swiper-button-prev" id="servicePrev">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.5 12.5H4.5" stroke="#0056A2" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10.5 6.5L4.5 12.5L10.5 18.5" stroke="#0056A2" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
                                 </div>
-                                <a href="service.html" class="service__link">
-                                    Все услуги
+                                <div class="swiper-button-next" id="serviceNext">
                                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M4.5 12.5H20.5" stroke="#0056A2" stroke-width="2"
@@ -508,11 +514,22 @@
                                         <path d="M14.5 6.5L20.5 12.5L14.5 18.5" stroke="#0056A2" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-                                </a>
+                                </div>
                             </div>
+                            <a href="service.html" class="service__link">
+                                Все услуги
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.5 12.5H20.5" stroke="#0056A2" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M14.5 6.5L20.5 12.5L14.5 18.5" stroke="#0056A2" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="section__l approach" id="approach">
             <div class="container">
@@ -572,7 +589,8 @@
                                     01
                                 </h2>
                                 <div class="pros__info">
-                                    <h2>Сертификация по <a href="about.html#certificate" style="display: inline;">международному стандарту
+                                    <h2>Сертификация по <a href="about.html#certificate"
+                                            style="display: inline;">международному стандарту
                                             ISO</a> </h2>
                                     <h3>Внедренная в нашей компании система менеджмента качества делает<br> нас одним из
                                         лидеров на рынке лингвистических услуг в РК. </h3>
