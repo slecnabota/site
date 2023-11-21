@@ -15,7 +15,8 @@ function openMenu(){
 function closeMenu(){
     const menu = document.querySelector(".header__menu");
     menu.classList.toggle("active")
-    openPop()
+    const pop = document.querySelector(".header__c");
+    pop.classList.remove("active")
 } 
 
 function openPop(){
