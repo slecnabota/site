@@ -20,8 +20,13 @@ function displayFileName() {
 
 function openInfo(infoId) {
   if (window.innerWidth < 1024) {
-    var infoElement = document.getElementById(`info${infoId}`);
+    let infoElement = document.getElementById(`info${infoId}`);
 
-    infoElement.classList.toggle("active");
+    if(infoElement.classList.contains("active")){
+        infoElement.classList.remove("active");
+    }
+    else{
+        infoElement.classList.add("active");
+    }
   }
 }
