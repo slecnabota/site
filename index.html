@@ -143,9 +143,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="header__menu active">
+                        <div class="header__menu">
                             <div class="header__content">
-                                <div class="header__close">
+                                <div class="header__close" onclick="closeMenu()">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path d="M22.5 7.5L7.5 22.5" stroke="black" stroke-width="2"
@@ -159,7 +159,7 @@
                                     <a href="index.html">Главная</a>
                                     <a href="about.html">О компании</a>
                                     <div class="header__pop">
-                                        <div class="header__p">
+                                        <div class="header__p" onclick="openPop()">
                                             Услуги и цены
                                             <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -218,7 +218,8 @@
                                 <h2>
                                     Мы уверены в каждом слове.
                                 </h2>
-                                <button class="btn">Заказать перевод</button>
+                                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal">Заказать
+                                    перевод</button>
                             </div>
                         </div>
                     </div>
@@ -841,7 +842,7 @@
                         <img src="img/footer-icon3.svg" alt="">
                     </div>
                     <div class="footer__cont">
-                        <button class="btn footer__btn">Заказать перевод</button>
+                        <button class="btn footer__btn" data-bs-toggle="modal" data-bs-target="#modal">Заказать перевод</button>
                         <div class="footer__flex">
                             <a href="mailto:info@t-g.kz" class="footer__text">Связаться с нами</a>
                             <div class="footer__connect">
@@ -928,6 +929,57 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5 6L6.5 18" stroke="#707070" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6.5 6L18.5 18" stroke="#707070" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="modal__inner">
+                    <h3>
+                        Для расчета стоимости и сроков перевода заполните форму,
+                        кратко опишите задачу, и, при необходимости, прикрепите документ.
+                        Так мы сможем быстрее обработать Ваш запрос и связаться с Вами для уточнения деталей.
+                    </h3>
+                    <form action="#" class="modal__form">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="tel" placeholder="Ваш номер телефона">
+                        <input type="text" placeholder="Ваш e-mail или Telegram ">
+                        <input type="text" placeholder="Укажите отрасль в которой требуется сделать перевод ">
+                        <textarea name="" id="" cols="30" rows="10"
+                            placeholder="Комментарий или ссылка на ресурс"></textarea>
+                        <!-- <input type="file" name="" id=""> -->
+                        <div class="file">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_243_1064)">
+                                    <path
+                                        d="M8.5 18.5L8.5 7C8.5 4.79 10.29 3 12.5 3C14.71 3 16.5 4.79 16.5 7L16.5 19.5C16.5 20.88 15.38 22 14 22C12.62 22 11.5 20.88 11.5 19.5L11.5 9C11.5 8.45 11.95 8 12.5 8C13.05 8 13.5 8.45 13.5 9L13.5 18.5L15 18.5L15 9C15 7.62 13.88 6.5 12.5 6.5C11.12 6.5 10 7.62 10 9L10 19.5C10 21.71 11.79 23.5 14 23.5C16.21 23.5 18 21.71 18 19.5L18 7C18 3.96 15.54 1.5 12.5 1.5C9.46 1.5 7 3.96 7 7L7 18.5L8.5 18.5Z"
+                                        fill="#0056A2" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_243_1064">
+                                        <rect width="24" height="24" fill="white"
+                                            transform="translate(24.5) rotate(90)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <input type="file" name="file" id="custom-file-input" onchange="displayFileName()">
+                            <label for="custom-file-input" id="custom-file-label">Прикрепить документ</label>
+                            <div id="file-selected"></div>
+                        </div>
+                        <button class="btn">Отправить запрос</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- <div class="widget">
         <div class="contact" id="contact">
             <span class="contact-text">Свяжитесь с нами</span>

@@ -12,6 +12,16 @@ function openMenu(){
     const menu = document.querySelector(".header__menu");
     menu.classList.toggle("active")
 }
+function closeMenu(){
+    const menu = document.querySelector(".header__menu");
+    menu.classList.toggle("active")
+    openPop()
+} 
+
+function openPop(){
+  const pop = document.querySelector(".header__c");
+  pop.classList.toggle("active")
+}
 
 // window.addEventListener("scroll", function () {
 //   var header = document.querySelector(".header");

@@ -17,14 +17,14 @@
 <body>
     <header class="header" id="header">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-lg-3">
+            <div class="row header__wrapper">
+                <div class="col-sm-2 col-lg-3 col-xl-3 col__left">
                     <a href="index.html" class="header-logo">
                         <img src="img/header-logo.svg" alt="" class="header-logo">
                         <span>сертифицированное бюро переводов</span>
                     </a>
                 </div>
-                <div class="col-sm-12 col-lg-9">
+                <div class="col-sm-10 col-lg-9 col__right">
                     <div class="header-inner">
                         <div class="header-top">
                             <div class="header-media">
@@ -53,7 +53,7 @@
                                     </svg>
                                 </a>
                             </div>
-                            <a href="tel:+77272626470" class="header-info">
+                            <a href="tel:+77272626470" class="header-info header__tel">
                                 +7 727 262 64 70
                             </a>
                             <a href="mailto:info@t-g.kz" class="header-info">
@@ -66,11 +66,14 @@
                                 <a href="">QAZ</a>
                             </div>
                         </div>
+                        <div class="menu" id="menu" onclick="openMenu()">
+                            <img src="img/burger.svg" alt="">
+                        </div>
                         <div class="header-bottom">
                             <a href="index.html" class="header-bottom__link">Главная</a>
                             <a href="about.html" class="header-bottom__link">О компании</a>
                             <div class="header-nav__inner">
-                                <a href="#service" class="header-link header-service header-bottom__link active">
+                                <a href="service.html" class="header-link header-service header-bottom__link active">
                                     Услуги и цены
                                     <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -140,6 +143,55 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="header__menu">
+                            <div class="header__content">
+                                <div class="header__close" onclick="closeMenu()">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.5 7.5L7.5 22.5" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.5 7.5L22.5 22.5" stroke="black" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+
+                                </div>
+                                <div class="header__parent">
+                                    <a href="index.html">Главная</a>
+                                    <a href="about.html">О компании</a>
+                                    <div class="header__pop">
+                                        <div class="header__p" onclick="openPop()">
+                                            Услуги и цены
+                                            <svg width="17" height="20" viewBox="0 0 17 20" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M14.5 7L8.5 13L2.5 7" stroke="#323232" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="header__c">
+                                            <a href="service.html#verbal">Устный перевод</a>
+                                            <a href="service.html#written">Письменный перевод</a>
+                                            <a href="service.html#editing">Редактирование</a>
+                                            <a href="service.html#assurance">Нотариальное заверение </a>
+                                            <a href="service.html#stamp">Заверение печатью компании</a>
+                                            <a href="service.html#organization">Организация мероприятий</a>
+                                            <a href="service.html#audit">Лингвистический аудит</a>
+                                        </div>
+                                    </div>
+                                    <a href="project.html">Проекты</a>
+                                    <a href="payment.html">Оплата</a>
+                                    <a href="contacts.html">Контакты</a>
+                                </div>
+                            </div>
+                            <div class="header__content">
+                                <a href="mailto:info@t-g.kz">info@t-g.kz</a>
+                                <a href="">г.Алматы, Самал-1, 18, оф.4</a>
+                                <div class="header__l">
+                                    <a href="" class="active">RU</a>
+                                    <a href="">ENG</a>
+                                    <a href="">QAZ</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -161,7 +213,7 @@
                                     Translators Group - это широкий<br> спектр услуг для различных<br> целей и
                                     ответственность за<br> результат.
                                 </h1>
-                                <button class="btn">Заказать перевод</button>
+                                <button class="btn" data-bs-toggle="modal" data-bs-target="#modal">Заказать перевод</button>
                             </div>
                         </div>
                     </div>
@@ -169,6 +221,7 @@
             </div>
         </section>
         <section class="section__s service-all" id="serviceAll">
+            <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-lg-3">
                         <h3 class="heading">Все услуги</h3>
@@ -178,13 +231,14 @@
                             <div class="service-all__items">
                                 <div class="service-all__item">
                                     <div class="service-all__content">
-                                        <div class="service-all__top">
+                                        <div class="service-all__top" onclick="openInfo(1)">
                                             <div class="service-all__image">
                                                 <img src="img/service-1.svg" alt="">
                                             </div>
                                             <h3>Устный перевод </h3>
+                                            <img src="img/arrow-down.svg" alt="">
                                         </div>
-                                        <div class="service-all__info service-all__show">
+                                        <div class="service-all__info service-all__show" id="info1">
                                             <p>Мы предоставляем все виды услуг по устному переводу в любых ситуациях,
                                                 будь то деловые встречи, конференции, форумы, семинары или сопровождение
                                                 в международных поездках. </p>
@@ -195,14 +249,15 @@
                                 </div>
                                 <div class="service-all__item">
                                     <div class="service-all__content">
-                                        <div class="service-all__top">
+                                        <div class="service-all__top" onclick="openInfo(2)">
                                             <div class="service-all__image">
                                                 <img src="img/service-3.svg" alt="">
                                             </div>
                                             <h3>Перевод чертежей <br>
                                                 и проектной документации</h3>
+                                                <img src="img/arrow-down.svg" alt="">
                                         </div>
-                                        <div class="service-all__info service-all__show">
+                                        <div class="service-all__info service-all__show" id="info2">
                                             <p>Мы предоставляем перевод нормативных документов и строительных
                                                 стандартов, чтобы ваши проекты соответствовали местным нормам и
                                                 требованиям.</p>
@@ -213,13 +268,14 @@
                                 </div>
                                 <div class="service-all__item">
                                     <div class="service-all__content">
-                                        <div class="service-all__top">
+                                        <div class="service-all__top" onclick="openInfo(3)">
                                             <div class="service-all__image">
                                                 <img src="img/service-5.svg" alt="">
                                             </div>
                                             <h3>Заверение печатью компании</h3>
+                                            <img src="img/arrow-down.svg" alt="">
                                         </div>
-                                        <div class="service-all__info service-all__show">
+                                        <div class="service-all__info service-all__show" id="info3">
                                             <p>Заверение переведенного документа печатью сертифицированного/присяжного
                                                 переводчика для предоставления в государственные органы и организации.
                                             </p>
@@ -230,13 +286,14 @@
                                 </div>
                                 <div class="service-all__item">
                                     <div class="service-all__content">
-                                        <div class="service-all__top">
+                                        <div class="service-all__top" onclick="openInfo(4)">
                                             <div class="service-all__image">
                                                 <img src="img/service-7.svg" alt="">
                                             </div>
                                             <h3>Организация мероприятий</h3>
+                                            <img src="img/arrow-down.svg" alt="">
                                         </div>
-                                        <div class="service-all__info service-all__show">
+                                        <div class="service-all__info service-all__show" id="info4">
                                             <p>Оказание организационных услуг на различных мероприятиях, прием и
                                                 сопровождение гостей. Аренда оборудования для синхронного перевода для
                                                 конференций и деловых встреч. </p>
@@ -249,13 +306,14 @@
                             <div class="service-all__items">
                                 <div class="service-all__item">
                                     <div class="service-all__content">
-                                        <div class="service-all__top">
+                                        <div class="service-all__top" onclick="openInfo(5)">
                                             <div class="service-all__image">
                                                 <img src="img/service-2.svg" alt="">
                                             </div>
                                             <h3>Письменный перевод</h3>
+                                            <img src="img/arrow-down.svg" alt="">
                                         </div>
-                                        <div class="service-all__info service-all__show">
+                                        <div class="service-all__info service-all__show" id="info5">
                                             <p>Услуги письменного перевода от наших квалифицированных переводчиков, с
                                                 соблюдением спецификации и терминологии.</p>
                                         </div>
@@ -265,13 +323,14 @@
                                 </div>
                                 <div class="service-all__item">
                                     <div class="service-all__content">
-                                        <div class="service-all__top">
+                                        <div class="service-all__top" onclick="openInfo(6)">
                                             <div class="service-all__image">
                                                 <img src="img/service-4.svg" alt="">
                                             </div>
                                             <h3>Редактирование </h3>
+                                            <img src="img/arrow-down.svg" alt="">
                                         </div>
-                                        <div class="service-all__info service-all__show">
+                                        <div class="service-all__info service-all__show" id="info6">
                                             <p>Оценка соответствия переводимого текста оригиналу по контексту, точности,
                                                 полноте, стилистике и правилам языка.</p>
                                         </div>
@@ -281,13 +340,14 @@
                                 </div>
                                 <div class="service-all__item">
                                     <div class="service-all__content">
-                                        <div class="service-all__top">
+                                        <div class="service-all__top" onclick="openInfo(7)">
                                             <div class="service-all__image">
                                                 <img src="img/service-6.svg" alt="">
                                             </div>
                                             <h3>Заверение печатью компании </h3>
+                                            <img src="img/arrow-down.svg" alt="">
                                         </div>
-                                        <div class="service-all__info service-all__show">
+                                        <div class="service-all__info service-all__show" id="info7">
                                             <p>Заверение переведенного документа печатью сертифицированного/присяжного
                                                 переводчика для предоставления в государственные органы и организации.
                                             </p>
@@ -298,13 +358,14 @@
                                 </div>
                                 <div class="service-all__item">
                                     <div class="service-all__content">
-                                        <div class="service-all__top">
+                                        <div class="service-all__top" onclick="openInfo(8)">
                                             <div class="service-all__image">
                                                 <img src="img/service-8.svg" alt="">
                                             </div>
                                             <h3>Лингвистический аудит </h3>
+                                            <img src="img/arrow-down.svg" alt="">
                                         </div>
-                                        <div class="service-all__info service-all__show">
+                                        <div class="service-all__info service-all__show" id="info8">
                                             <p>Анализ и оценка языковых и коммуникативных аспектов внутри организации.
                                             </p>
                                         </div>
@@ -323,6 +384,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="section__s service-item" id="verbal">
             <div class="container">
@@ -540,7 +602,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn service-item__btn">Заказать услугу</button>
+                        <button class="btn service-item__btn" data-bs-toggle="modal" data-bs-target="#modal">Заказать услугу</button>
                     </div>
                 </div>
             </div>
@@ -605,7 +667,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn service-item__btn">Заказать услугу</button>
+                        <button class="btn service-item__btn" data-bs-toggle="modal" data-bs-target="#modal">Заказать услугу</button>
                     </div>
                 </div>
             </div>
@@ -669,7 +731,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn service-item__btn">Заказать услугу</button>
+                        <button class="btn service-item__btn" data-bs-toggle="modal" data-bs-target="#modal">Заказать услугу</button>
                     </div>
                 </div>
             </div>
@@ -698,7 +760,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn service-item__btn">Заказать услугу</button>
+                        <button class="btn service-item__btn" data-bs-toggle="modal" data-bs-target="#modal">Заказать услугу</button>
                     </div>
                 </div>
             </div>
@@ -751,7 +813,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn service-item__btn">Заказать услугу</button>
+                        <button class="btn service-item__btn" data-bs-toggle="modal" data-bs-target="#modal">Заказать услугу</button>
                     </div>
                 </div>
             </div>
@@ -776,7 +838,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn service-item__btn">Заказать услугу</button>
+                        <button class="btn service-item__btn" data-bs-toggle="modal" data-bs-target="#modal">Заказать услугу</button>
                     </div>
                 </div>
             </div>
@@ -935,7 +997,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn service-item__btn">Заказать услугу</button>
+                        <button class="btn service-item__btn" data-bs-toggle="modal" data-bs-target="#modal">Заказать услугу</button>
                     </div>
                 </div>
             </div>
@@ -1011,7 +1073,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn service-item__btn">Заказать услугу</button>
+                        <button class="btn service-item__btn" data-bs-toggle="modal" data-bs-target="#modal">Заказать услугу</button>
                     </div>
                 </div>
             </div>
@@ -1072,7 +1134,7 @@
                         <img src="img/footer-icon3.svg" alt="">
                     </div>
                     <div class="footer__cont">
-                        <button class="btn footer__btn">Заказать перевод</button>
+                        <button class="btn footer__btn" data-bs-toggle="modal" data-bs-target="#modal">Заказать перевод</button>
                         <div class="footer__flex">
                             <a href="mailto:info@t-g.kz" class="footer__text">Связаться с нами</a>
                             <div class="footer__connect">
@@ -1159,6 +1221,57 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.5 6L6.5 18" stroke="#707070" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6.5 6L18.5 18" stroke="#707070" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="modal__inner">
+                    <h3>
+                        Для расчета стоимости и сроков перевода заполните форму,
+                        кратко опишите задачу, и, при необходимости, прикрепите документ.
+                        Так мы сможем быстрее обработать Ваш запрос и связаться с Вами для уточнения деталей.
+                    </h3>
+                    <form action="#" class="modal__form">
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="tel" placeholder="Ваш номер телефона">
+                        <input type="text" placeholder="Ваш e-mail или Telegram ">
+                        <input type="text" placeholder="Укажите отрасль в которой требуется сделать перевод ">
+                        <textarea name="" id="" cols="30" rows="10"
+                            placeholder="Комментарий или ссылка на ресурс"></textarea>
+                        <!-- <input type="file" name="" id=""> -->
+                        <div class="file">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_243_1064)">
+                                    <path
+                                        d="M8.5 18.5L8.5 7C8.5 4.79 10.29 3 12.5 3C14.71 3 16.5 4.79 16.5 7L16.5 19.5C16.5 20.88 15.38 22 14 22C12.62 22 11.5 20.88 11.5 19.5L11.5 9C11.5 8.45 11.95 8 12.5 8C13.05 8 13.5 8.45 13.5 9L13.5 18.5L15 18.5L15 9C15 7.62 13.88 6.5 12.5 6.5C11.12 6.5 10 7.62 10 9L10 19.5C10 21.71 11.79 23.5 14 23.5C16.21 23.5 18 21.71 18 19.5L18 7C18 3.96 15.54 1.5 12.5 1.5C9.46 1.5 7 3.96 7 7L7 18.5L8.5 18.5Z"
+                                        fill="#0056A2" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_243_1064">
+                                        <rect width="24" height="24" fill="white"
+                                            transform="translate(24.5) rotate(90)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <input type="file" name="file" id="custom-file-input" onchange="displayFileName()">
+                            <label for="custom-file-input" id="custom-file-label">Прикрепить документ</label>
+                            <div id="file-selected"></div>
+                        </div>
+                        <button class="btn">Отправить запрос</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- <div class="widget">
         <div class="contact" id="contact">
             <span class="contact-text">Свяжитесь с нами</span>
