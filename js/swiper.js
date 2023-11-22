@@ -7,8 +7,8 @@ const service = new Swiper("#serviceSwiper", {
     prevEl: '#servicePrev',
   },
   breakpoints: {
-    370: {
-      slidesPerView: 1,
+    320: {
+      slidesPerView: 1.2,
       spaceBetween: 20,
     },
     370: {

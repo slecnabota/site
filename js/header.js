@@ -11,12 +11,14 @@ window.addEventListener("scroll", function () {
 function openMenu(){
     const menu = document.querySelector(".header__menu");
     menu.classList.toggle("active")
+    document.body.classList.toggle("lock");
 }
 function closeMenu(){
     const menu = document.querySelector(".header__menu");
     menu.classList.toggle("active")
     const pop = document.querySelector(".header__c");
     pop.classList.remove("active")
+    document.body.classList.toggle("lock");
 } 
 
 function openPop(){
