@@ -9,11 +9,11 @@ const service = new Swiper("#serviceSwiper", {
   breakpoints: {
     320: {
       slidesPerView: 1.2,
-      spaceBetween: 20,
+      spaceBetween: 15,
     },
     370: {
       slidesPerView: 1.2,
-      spaceBetween: 20,
+      spaceBetween: 15,
     },
     768: {
       slidesPerView: 2.5,
@@ -41,7 +41,7 @@ const partner = new Swiper("#partnerSwiper", {
   breakpoints: {
     320: {
       slidesPerView: 3,
-      spaceBetween: 20,
+      spaceBetween: 15,
     },
     768: {
       slidesPerView: 4,
@@ -64,7 +64,7 @@ const post = new Swiper("#postSwiper", {
   breakpoints: {
     320: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 15,
     },
     475: {
       slidesPerView: 2.8,
